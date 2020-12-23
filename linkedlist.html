@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LinkedList Questions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+	
+</head>
+<body>
+
+<header>
+	<h1 id="ltop" style="color: red; font-family: algerian; font-size: 250%; text-align: center;">CodersCheckList<img class="image" src="project_icon.jpg" style="float:right;width:80px;margin-right:20px;height:80px;"></h1>
+	</header>
+	<br>
+   
+   <!-- top navigation bar conatiner-->
+  <div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="array.html">Arrays</a>
+  <a href="string.html">Strings</a>
+  <a href="linkedlist.html" class="active">Linked-List</a>
+   <a href="stack.html">Stack</a>
+  <a href="queue.html">Queue</a>
+  <a href="heap.html">PriorityQueue</a>
+  <a href="set.html">Set And Map</a>
+  <a href="binarytree.html">Binary Tree</a>
+   <a href="binarysearchtree.html">Binary Search Tree</a>
+  <a href="graph.html">Graph</a>
+  <a href="trie.html">Trie</a>
+  <a href="segmenttree.html">Segment Tree</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!-- top navigation bar conatiner closed-->
+<!--linked list content start here-->
+<!-- sidebar conatiner-->
+<h2>LINKEDLIST</h2>
+<div class="leftsidebar">
+	<ul class="leftlist" style="margin-right: 5px; overflow: auto;">
+		<li class="listheading">ARRAYS</li>
+		<li><a class="hyperlinks1" href="array.html#A1">Kadane's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="array.html#A2">N/2 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A3">N/3 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A4">Merge Overlapping Intervals</a></li>
+		<li><a class="hyperlinks1" href="array.html#A5">Rotate Matrix</a></li>
+		<li><a class="hyperlinks1" href="array.html#A6"> Buy/Sell Stocks-I,II,III</a></li>
+		<li class="listheading">STRING</li>
+		<li><a class="hyperlinks1" href="string.html#S1">Pattern Matching Algorithms(KMP+Rabin Karp)</a></li>
+		<li><a class="hyperlinks1" href="string.html#S2">Using String Builder Class</a></li>
+		<li><a class="hyperlinks1" href="string.html#S3">String Compression Algorithm</a></li>
+		<li class="listheading">LINKEDLIST</li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L1">Implementation of LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L2">Detect cycle in a LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L3">Reverse a LinkedList</a></li>
+		<li class="listheading">STACK</li>
+		<li><a class="hyperlinks1" href="stack.html#ST1">Implementation of Stack</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST2">Balance paranthesis</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST3">Trapping rain water</a></li>
+		<li class="listheading">QUEUE</li>
+		<li><a class="hyperlinks1" href="queue.html#Q1">Implementation of Queue + Deque</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q2">Sliding window maximum</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q3">Implement BFS</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q4">Implement Level Order in Binary Tree</a></li>
+		<li class="listheading">PRIORITY QUEUE</li>
+		<li><a class="hyperlinks1" href="heap.html#H1">Implementation of Heap Data structure</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H2">Connect n ropes with min cost</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H3">Median of running stream</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H4">LRU cache</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H5">LFU cache</a></li>
+		<li class="listheading">SET &amp; MAP</li>
+		<li><a class="hyperlinks1" href="set.html#M1">Internal working of HashMap</a></li>
+		<li><a class="hyperlinks1" href="set.html#M2">4-sum</a></li>
+		<li><a class="hyperlinks1" href="set.html#M3">Longest substring without repeat</a></li>
+		<li class="listheading">BINARY TREE</li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT1">Implementation:insert,delete,traverse</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT2">Invert a binary tree</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT3">Lowest common ancestor</a></li>
+		<li class="listheading">BINARY SEARCH TREE</li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST1">Implementation</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST2">Check if a tree is BST or not</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST3">AVL tree and rotation</a></li>
+		<li class="listheading">GRAPH</li>
+		<li><a class="hyperlinks1" href="graph.html#G1">Implementation, BFS and DFS traversals</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G2">Topological Sorting</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G3">Bellman ford Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G4">Dijkstra's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G5">Prim's Algorithm</a></li>
+		<li class="listheading">TRIE</li>
+		<li><a class="hyperlinks1" href="trie.html#TR1">Implementation-insert and search</a></li>
+		<li class="listheading">SEGMENT TREES</li>
+		<li><a class="hyperlinks1" href="segmenttree.html#TS1">Implementation</a></li>
+	</ul>
+</div> 
+<!--programs of linked list start here-->
+<!--Implementation of link list-->
+<div class="content1">
+<div style="margin-left: 19%;">	
+<h3 id="L1">Implementation of Linkedlist</h3>
+<p style="color: white;font-size: 20px;">Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at the contiguous location, the elements are linked using pointers as shown below.</p>
+<img src="ll1.png" style="width: 70%; height: 200px;border:3px solid red;">
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	class LinkedList { 
+    Node head;<p style="color: green;">//head of list 
+     /* Linked list Node*/</p>
+    class Node { 
+        int data; 
+        Node next; 
+         <p style="color: green;">// Constructor to create a new node 
+        // Next is by default initialized as null</p> 
+        Node(int d) { data = d; } 
+    } 
+}
+</pre>
+<p style="font-size: 22px; color:gold; text-align: center;">Creation and Insertion</p>
+<p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+<p style="color: white; font-size: 20px;">Insertion in the list is done at the end, that is the new node is added after the last node of the given Linked List.Since a Linked List is typically represented by the head pointer of it, it is required to traverse the list till the last node and then change the next of last node to new node.</p>
+<img src="ll2.png" style="width: 50%; height: 200px;border:3px solid red;">
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+import java.io.*; 
+  <p style="color:green";>// Java program to implement
+// a Singly Linked List</p> 
+public class LinkedList { 
+  Node head; <p style="color:green";>// head of list 
+     // Linked list Node. 
+    // This inner class is made static 
+    // so that main() can access it </p>
+    static class Node { 
+        int data; 
+        Node next; 
+      <p style="color:green";>// Constructor </p>
+        Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+    <p style="color:green";>// Method to insert a new node </p>
+    public static LinkedList insert(LinkedList list, int data) 
+    { 
+        <p style="color:green";>// Create a new node with given data</p> 
+        Node new_node = new Node(data); 
+        new_node.next = null; 
+      <p style="color:green";>// If the Linked List is empty, 
+        // then make the new node as head </p>
+        if (list.head == null) { 
+            list.head = new_node; 
+        } 
+        else { 
+            <p style="color:green";>// Else traverse till the last node 
+            // and insert the new_node there </p>
+            Node last = list.head; 
+            while (last.next != null) { 
+                last = last.next; 
+            } 
+           <p style="color:green";>// Insert the new_node at last node </p>
+            last.next = new_node; 
+        } 
+       <p style="color:green";> // Return the list by head</p> 
+        return list; 
+    } 
+   <p style="color:green";> // Method to print the LinkedList.</p> 
+    public static void printList(LinkedList list) 
+    { 
+        Node currNode = list.head; 
+         System.out.print("LinkedList: "); 
+      <p style="color:green";> // Traverse through the LinkedList </p>
+        while (currNode != null) { 
+            <p style="color:green";>// Print the data at current node</p> 
+            System.out.print(currNode.data + " "); 
+        <p style="color:green";>// Go to next node </p>
+            currNode = currNode.next; 
+        } 
+    } 
+     <p style="color:green";>// Driver code </p>
+    public static void main(String[] args) 
+    { 
+        <p style="color:green";>/* Start with the empty list. */</p>
+        LinkedList list = new LinkedList(); 
+        <p style="color:green";>// 
+        // ******INSERTION****** 
+        // 
+        // Insert the values</p> 
+        list = insert(list, 1); 
+        list = insert(list, 2); 
+        list = insert(list, 3); 
+        list = insert(list, 4); 
+        list = insert(list, 5); 
+        list = insert(list, 6); 
+        list = insert(list, 7); 
+        list = insert(list, 8); 
+     <p style="color:green";>// Print the LinkedList</p> 
+        printList(list); 
+    } 
+}
+</pre> 
+<p style="font-size: 22px; color:gold; text-align: center;">Deletion by KEY</p>
+<p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+<section style="color: white; font-size: 20px;">
+<p style="font-family:arial; text-decoration-line: underline;">To be done:</p>
+Given a ‘key’, delete the first occurrence of this key in linked list.<br>
+
+<p style="font-family:arial; text-decoration-line: underline;">How to do it:</p><br><br>
+To delete a node from linked list, do following steps.<br>
+Search the key for its first occurrence in the list<br>
+Now, Any of the 3 conditions can be there:<br>
+<p style="font-family:arial; text-decoration-line: underline;">Case 1:</p> The key is found at head:<br>
+1)  In this case, Change the head of the node to the next node of current head.<br>
+2)  Free the memory of replaced head node.<br>
+<p style="font-family:arial; text-decoration-line: underline;">Case 2:</p> The key is found at in the middle or last, except at head:<br>
+1)  In this case, Find previous node of the node to be deleted.<br>
+2)  Change the next of previous node to the next node of current node.<br>
+3)  Free the memory of replaced node.<br>
+<p style="font-family:arial; text-decoration-line: underline;">Case 3:</p> The key is not found in the list:<br>
+1)  In this case, No operation needs to be done.
+</section><br>
+<img src="ll3.png" style="width: 50%; height: 200px;border:3px solid red;">
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px; overflow: auto;">
+import java.io.*; 
+ <p style="color:green";>// Java program to implement 
+// a Singly Linked List </p>
+public class LinkedList { 
+     Node head;  <p style="color:green";>// head of list 
+     // Linked list Node. 
+	// This inner class is made static 
+	// so that main() can access it</p> 
+	static class Node { 
+        int data; 
+		Node next; 
+        <p style="color:green";>// Constructor</p> 
+		Node(int d) 
+		{ 
+			data = d; 
+			next = null; 
+		} 
+	} 
+	 <p style="color:green";>// Method to insert a new node</p> 
+	public static LinkedList insert(LinkedList list, int data) 
+	{ 
+		 <p style="color:green";>// Create a new node with given data</p> 
+		Node new_node = new Node(data); 
+		new_node.next = null; 
+       <p style="color:green";>// If the Linked List is empty, 
+		// then make the new node as head </p>
+		if (list.head == null) { 
+			list.head = new_node; 
+		} 
+		else { 
+			 <p style="color:green";>// Else traverse till the last node 
+			// and insert the new_node there </p>
+			Node last = list.head; 
+			while (last.next != null) { 
+				last = last.next; 
+			} 
+  <p style="color:green";>// Insert the new_node at last node</p> 
+			last.next = new_node; 
+		} 
+  <p style="color:green";>// Return the list by head</p> 
+		return list; 
+	} 
+	 <p style="color:green";>// Method to print the LinkedList.</p> 
+	public static void printList(LinkedList list) 
+	{ 
+		Node currNode = list.head; 
+       System.out.print("LinkedList: "); 
+     <p style="color:green";>// Traverse through the LinkedList </p>
+		while (currNode != null) { 
+			 <p style="color:green";>// Print the data at current node </p>
+			System.out.print(currNode.data + " "); 
+    <p style="color:green";>// Go to next node</p> 
+			currNode = currNode.next; 
+		} 
+		System.out.println(); 
+	} 
+ <p style="color:green";>// **************DELETION BY KEY************** 
+        // Method to delete a node in the LinkedList by KEY</p> 
+	public static LinkedList deleteByKey(LinkedList list, int key) 
+	{ 
+		 <p style="color:green";>// Store head node </p>
+		Node currNode = list.head, prev = null; 
+         <p style="color:green";>// 
+		// CASE 1: 
+		// If head node itself holds the key to be deleted </p>
+          if (currNode != null && currNode.data == key) { 
+			list.head = currNode.next;  <p style="color:green";>// Changed head 
+             // Display the message</p> 
+			System.out.println(key + " found and deleted"); 
+    <p style="color:green";>// Return the updated List </p>
+			return list; 
+		} 
+      <p style="color:green";>// 
+		// CASE 2: 
+		// If the key is somewhere other than at head 
+		// 
+        // Search for the key to be deleted, 
+		// keep track of the previous node 
+		// as it is needed to change currNode.next</p> 
+		while (currNode != null && currNode.data != key) { 
+			 <p style="color:green";>// If currNode does not hold key 
+			// continue to next node </p>
+			prev = currNode; 
+			currNode = currNode.next; 
+		} 
+      <p style="color:green";>// If the key was present, it should be at currNode 
+		// Therefore the currNode shall not be null</p> 
+		if (currNode != null) { 
+			 <p style="color:green";>// Since the key is at currNode 
+			// Unlink currNode from linked list </p>
+			prev.next = currNode.next; 
+        <p style="color:green";>// Display the message </p>
+			System.out.println(key + " found and deleted"); 
+		} 
+     <p style="color:green";>// 
+		// CASE 3: The key is not present 
+		// 
+       // If key was not present in linked list 
+		// currNode should be null </p>
+		if (currNode == null) { 
+			 <p style="color:green";>// Display the message </p>
+			System.out.println(key + " not found"); 
+		} 
+       <p style="color:green";>// return the List</p> 
+		return list; 
+	} 
+      <p style="color:green";>// **************MAIN METHOD************** 
+          // method to create a Singly linked list with n nodes</p> 
+	public static void main(String[] args) 
+	{ 
+		 <p style="color:green";>/* Start with the empty list. */</p>
+		LinkedList list = new LinkedList(); 
+       <p style="color:green";>// 
+		// ******INSERTION****** 
+		// 
+      // Insert the values</p> 
+		list = insert(list, 1); 
+		list = insert(list, 2); 
+		list = insert(list, 3); 
+		list = insert(list, 4); 
+		list = insert(list, 5); 
+		list = insert(list, 6); 
+		list = insert(list, 7); 
+		list = insert(list, 8); 
+     <p style="color:green";>// Print the LinkedList </p>
+		printList(list); 
+        <p style="color:green";>// 
+		// ******DELETION BY KEY****** 
+		// 
+        // Delete node with value 1 
+		// In this case the key is ***at head***</p> 
+		deleteByKey(list, 1); 
+   <p style="color:green";>// Print the LinkedList </p>
+		printList(list); 
+ <p style="color:green";>// Delete node with value 4 
+		// In this case the key is present ***in the middle*** </p>
+		deleteByKey(list, 4); 
+ <p style="color:green";>// Print the LinkedList </p>
+		printList(list); 
+ <p style="color:green";>// Delete node with value 10 
+		// In this case the key is ***not present*** </p>
+		deleteByKey(list, 10); 
+ <p style="color:green";>// Print the LinkedList</p> 
+		printList(list); 
+	} 
+} 
+</pre>
+<!--Detect a cycle in a link list-->
+<h3 id="L2">Detect cycle in a linkedlist (Floyd Algo)</h3>
+<p style="color: white; font-size: 20px;">
+Given head, the head of a linked list, determine if the linked list has a cycle in it.<br>
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter.<br>
+Return true if there is a cycle in the linked list. Otherwise, return false.</p>
+<img src="ll4.png" style="width: 70%; height: 200px;border:3px solid red;">
+<pre class="content2">
+Input: head = [3,2,0,-4], pos = 1
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+</pre>
+<img src="ll5.png" style="width: 15%; height: 100px;border:3px solid red;">
+<pre class="content2">
+Input: head = [1], pos = -1
+Output: false
+Explanation: There is no cycle in the linked list.
+</pre>
+<p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+<p style="color: white; font-size: 20px;">Floyd's Cycle Detection Algorithm is a pointer algorithm that uses only two pointers , which move through the sequence at different speeds. The idea is to move fast pointer twice as quickly as the slow pointer and the distance between them increases by 1 at each step. If at some point both meet, we have found a cycle in the list, else if we have found a cycle in the list,else if we have reached the end of the list, no cycle is present. </p>
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+ <p style="color:green";>// A linked list node</p>
+class Node
+{
+	int data;
+	Node next;
+    Node(int data, Node next) {
+		this.data = data;
+		this.next = next;
+	}
+}
+class Main
+{
+	 <p style="color:green";>// Function to detect Cycle in a linked list using
+	// Floyd’s Cycle Detection Algorithm</p>
+	public static boolean detectCycle(Node head)
+	{
+		 <p style="color:green";>// take two references - slow and fast</p>
+		Node slow = head, fast = head;
+          while (fast != null && fast.next != null)
+		  {
+			 <p style="color:green";>// move slow by one</p>
+			slow = slow.next;
+          <p style="color:green";>// move fast by two</p>
+			fast = fast.next.next;
+<p style="color:green";>// if they meet any any node, linked list contains a cycle</p>
+			if (slow == fast) {
+				return true;
+			}
+		}
+<p style="color:green";>// we reach here if slow & fast do not meet</p>
+		return false;
+	}
+ <p style="color:green";>// Detect Cycle in a linked list using Floyd’s Cycle Detection Algorithm</p>
+	public static void main(String[] args)
+	{
+		 <p style="color:green";>// input keys</p>
+		int[] keys = { 1, 2, 3, 4, 5 };
+        Node head = null;
+		for (int i = keys.length - 1; i >= 0; i--) {
+			head = new Node(keys[i], head);
+		}
+ <p style="color:green";>// insert cycle</p>
+		head.next.next.next.next.next = head.next.next;
+         if (detectCycle(head)) {
+			System.out.println("Cycle Found");
+		} else {
+			System.out.println("No Cycle Found");
+		}
+	}
+}
+</pre>
+<!--Detect cycle in a linkedlist-->
+<h3 id="L3">Reverse a linked list + reverse in groups</h3>
+<p style="font-size: 26px; color: gold;">EXAMPLE:</p>
+<pre class="content2">
+Input: 1->2->3->4->5->NULL
+Output: 5->4->3->2->1->NULL
+</pre>
+<p style="font-size: 22px; color:gold; text-align: center;">Iterative Method</p>
+<section style="color: white;font-size: 20px;">
+1)  Initialize three pointers prev as NULL, curr as head and next as NULL.<br>
+2)  Iterate through the linked list. In loop, do following. <br>
+// Before changing next of current, <br>
+// store next node <br>
+next = curr->next<br>
+// Now change next of current<br> 
+// This is where actual reversing happens<br> 
+curr->next = prev<br> 
+// Move prev and curr one step forward<br> 
+prev = curr <br>
+curr = next
+</section>
+<img src="ll6.gif" style="width: 60%; height: 300px;border:3px solid red;margin-left: 150px;">
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+ <p style="color:green";>// Java program for reversing the linked list</p>
+class LinkedList {
+   static Node head;
+     static class Node {
+        int data;
+		Node next;
+        Node(int d)
+		{
+			data = d;
+			next = null;
+		}
+	}
+  <p style="color:green";>/* Function to reverse the linked list */</p>
+	Node reverse(Node node)
+	{
+		Node prev = null;
+		Node current = node;
+		Node next = null;
+		while (current != null) {
+			next = current.next;
+			current.next = prev;
+			prev = current;
+			current = next;
+		}
+		node = prev;
+		return node;
+	}
+ <p style="color:green";>// prints content of double linked list</p>
+	void printList(Node node)
+	{
+		while (node != null) {
+			System.out.print(node.data + " ");
+			node = node.next;
+		}
+	}
+    public static void main(String[] args)
+	{
+		LinkedList list = new LinkedList();
+		list.head = new Node(85);
+		list.head.next = new Node(15);
+		list.head.next.next = new Node(4);
+		list.head.next.next.next = new Node(20);
+
+		System.out.println("Given Linked list");
+		list.printList(head);
+		head = list.reverse(head);
+		System.out.println("");
+		System.out.println("Reversed linked list ");
+		list.printList(head);
+	}
+}
+</pre>
+<p style="font-size: 22px; color:gold; text-align: center;">Reverse LinkedList in group</p>
+<pre class="content2">
+Input: 1->2->3->4->5->6->7->8->NULL, K = 3
+Output: 3->2->1->6->5->4->8->7->NULL
+
+Input: 1->2->3->4->5->6->7->8->NULL, K = 5
+Output: 5->4->3->2->1->8->7->6->NULL
+</pre>
+<p style="font-size: 26px; color: gold;">ALGORITHM:</p>
+<p style="color: white;font-size: 20px;">
+1)  Reverse the first sub-list of size k. While reversing keep track of the next node and previous node. Let the pointer to the next node be next and pointer to the previous node be prev.<br>
+2)  head->next = reverse(next, k) ( Recursively call for rest of the list and link the two sub-lists )<br>
+3)  Return prev ( prev becomes the new head of the list.</p>
+<img src="ll7.png" style="width: 60%; height: 400px;border:3px solid red;margin-left: 150px;">
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+<p style="color: green;">// Java program to reverse a linked list in groups of 
+// given size</p> 
+class LinkedList 
+{ 
+	Node head; <p style="color: green;">// head of list 
+      /* Linked list Node*/</p>
+	class Node 
+	{ 
+		int data; 
+		Node next; 
+		Node(int d) {data = d; next = null; } 
+	} 
+    Node reverse(Node head, int k) 
+	{ 
+	Node current = head; 
+	Node next = null; 
+	Node prev = null; 
+	int count = 0; 
+    <p style="color: green;">/* Reverse first k nodes of linked list */</p>
+	while (count < k && current != null) 
+	{ 
+		next = current.next; 
+		current.next = prev; 
+		prev = current; 
+		current = next; 
+		count++; 
+	} 
+<p style="color: green;">/* next is now a pointer to (k+1)th node 
+		Recursively call for the list starting from current. 
+		And make rest of the list as next of first node */</p>
+	if (next != null) 
+		head.next = reverse(next, k); 
+<p style="color: green;">// prev is now head of input list</p> 
+	return prev; 
+	}					 
+<p style="color: green;">/* Utility functions */
+/* Inserts a new Node at front of the list. */</p>
+	public void push(int new_data) 
+	{ 
+		<p style="color: green;">/* 1 & 2: Allocate the Node &
+				Put in the data*/</p>
+		Node new_node = new Node(new_data); 
+<p style="color: green;">/* 3. Make next of new Node as head */</p>
+		new_node.next = head; 
+<p style="color: green;">/* 4. Move the head to point to new Node */</p>
+		head = new_node; 
+	} 
+<p style="color: green;">/* Function to print linked list */</p>
+	void printList() 
+	{ 
+		Node temp = head; 
+		while (temp != null) 
+		{ 
+		System.out.print(temp.data+" "); 
+		temp = temp.next; 
+		} 
+		System.out.println(); 
+	} 
+<p style="color: green;">/* Driver program to test above functions */</p>
+	public static void main(String args[]) 
+	{ 
+		LinkedList llist = new LinkedList(); 
+		<p style="color: green;">/* Constructed Linked List is 1->2->3->4->5->6-> 
+		7->8->8->9->null */</p>
+		llist.push(9); 
+		llist.push(8); 
+		llist.push(7); 
+		llist.push(6); 
+		llist.push(5); 
+		llist.push(4); 
+		llist.push(3); 
+		llist.push(2); 
+		llist.push(1); 
+		System.out.println("Given Linked List"); 
+		llist.printList(); 
+	    llist.head = llist.reverse(llist.head, 3); 
+	    System.out.println("Reversed list"); 
+		llist.printList(); 
+	} 
+} 
+</pre>
+</div>
+</div>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+        <h3>About<span>CodersCheckList</span></h3>
+
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          |
+          <a href="#ltop">Back to Top</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Interview Preparation Platform</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Campus -1, 19th KM Stone, NH 24,</span>
+            Ghaziabad, Uttar Pradesh 201009</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 123456789</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ujjwal.19b101048@abes.ac.in">ujjwal.19b101048@abes.ac.in</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:vartika.19b101085@abes.ac.in">vartika.19b101085@abes.ac.in</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Website</span>
+          An Interview Preparation Platform</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

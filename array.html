@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  
+</head>
+<body>
+     <header>
+	<h1 id="atop" style="color: red; font-family: algerian; font-size: 250%; text-align: center;">CodersCheckList<img class="image" src="project_icon.jpg" style="float:right;width:80px;margin-right:20px;height:80px;"></h1>
+	</header>
+	<br>
+	<!-- top navigation bar container-->
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="array.html" class="active">Arrays</a>
+  <a href="string.html">Strings</a>
+  <a href="linkedlist.html">Linked-List</a>
+   <a href="stack.html">Stack</a>
+  <a href="queue.html">Queue</a>
+  <a href="heap.html">PriorityQueue</a>
+  <a href="set.html">Set And Map</a>
+  <a href="binarytree.html">Binary Tree</a>
+   <a href="binarysearchtree.html">Binary Search Tree</a>
+  <a href="graph.html">Graph</a>
+  <a href="trie.html">Trie</a>
+  <a href="segmenttree.html">Segment Tree</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!-- top navigation bar conatiner closed-->
+<!--sidebar conatiner start here--> 
+<h2>Arrays</h2>
+<div class="leftsidebar">
+	<ul class="leftlist" style="margin-right: 5px; overflow: auto;">
+		<li class="listheading">ARRAYS</li>
+		<li><a class="hyperlinks1" href="array.html#A1">Kadane's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="array.html#A2">N/2 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A3">N/3 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A4">Merge Overlapping Intervals</a></li>
+		<li><a class="hyperlinks1" href="array.html#A5">Rotate Matrix</a></li>
+		<li><a class="hyperlinks1" href="array.html#A6"> Buy/Sell Stocks-I,II,III</a></li>
+		<li class="listheading">STRING</li>
+		<li><a class="hyperlinks1" href="string.html#S1">Pattern Matching Algorithms(KMP+Rabin Karp)</a></li>
+		<li><a class="hyperlinks1" href="string.html#S2">Using String Builder Class</a></li>
+		<li><a class="hyperlinks1" href="string.html#S3">String Compression Algorithm</a></li>
+		<li class="listheading">LINKEDLIST</li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L1">Implementation of LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L2">Detect cycle in a LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L3">Reverse a LinkedList</a></li>
+		<li class="listheading">STACK</li>
+		<li><a class="hyperlinks1" href="stack.html#ST1">Implementation of Stack</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST2">Balance paranthesis</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST3">Trapping rain water</a></li>
+		<li class="listheading">QUEUE</li>
+		<li><a class="hyperlinks1" href="queue.html#Q1">Implementation of Queue + Deque</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q2">Sliding window maximum</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q3">Implement BFS</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q4">Implement Level Order in Binary Tree</a></li>
+		<li class="listheading">PRIORITY QUEUE</li>
+		<li><a class="hyperlinks1" href="heap.html#H1">Implementation of Heap Data structure</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H2">Connect n ropes with min cost</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H3">Median of running stream</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H4">LRU cache</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H5">LFU cache</a></li>
+		<li class="listheading">SET &amp; MAP</li>
+		<li><a class="hyperlinks1" href="set.html#M1">Internal working of HashMap</a></li>
+		<li><a class="hyperlinks1" href="set.html#M2">4-sum</a></li>
+		<li><a class="hyperlinks1" href="set.html#M3">Longest substring without repeat</a></li>
+		<li class="listheading">BINARY TREE</li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT1">Implementation:insert,delete,traverse</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT2">Invert a binary tree</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT3">Lowest common ancestor</a></li>
+		<li class="listheading">BINARY SEARCH TREE</li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST1">Implementation</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST2">Check if a tree is BST or not</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST3">AVL tree and rotation</a></li>
+		<li class="listheading">GRAPH</li>
+		<li><a class="hyperlinks1" href="graph.html#G1">Implementation, BFS and DFS traversals</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G2">Topological Sorting</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G3">Bellman ford Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G4">Dijkstra's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G5">Prim's Algorithm</a></li>
+		<li class="listheading">TRIE</li>
+		<li><a class="hyperlinks1" href="trie.html#TR1">Implementation-insert and search</a></li>
+		<li class="listheading">SEGMENT TREES</li>
+		<li><a class="hyperlinks1" href="segmenttree.html#TS1">Implementation</a></li>
+	</ul>
+</div>
+<!-- sidebar closed-->
+<!--programs of arrays start here--> 
+ <div class="content1">
+ 	<div style="margin-left: 19%;">
+ 	<h3 id="A1" id="a1">Largest Sum Contiguous Subarray OR Kadane's Algorithm</h3>
+ 	<p style="color: white; font-size: 20px;"> Write an efficient program to find the sum of contiguous subarray within a one-dimensional array of numbers which has the largest sum.</p>
+ 	<img src="kadane-Algorithm.jpg" width="70%" height="300px" style="border:3px solid red;">
+<p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+      <p style="color: white; font-size: 20px;">We can easily solve this in linear time using kadane's algorithm. The idea is to maintain maximum (positive sum) sub-array "ending" at each index of the given array. This subarray is either empty(in which case its sum is zero) or consists of one more element than the maximum subarray ending at the previous index.</p>
+ 	<pre class="content2">
+    Input:{-2,1,-3,4,-1,2,1,-5,4}
+   Output:Subarray with largest sum is {4,-1,2,1} with sum 6
+ 	</pre>
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+ 	
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+           	class Main
+{
+    <a>// Function to find contiguous sub-array with the largest sum
+	// in given set of integers (handles negative numbers as well)</a>
+	public static int kadane(int[] A)
+	{
+		<a>// stores maximum sum sub-array found so far</a>
+		int maxSoFar = Integer.MIN_VALUE;
+
+		<a>// stores maximum sum of sub-array ending at current position</a>
+		int maxEndingHere = 0;
+
+		<a>// traverse the given array</a>
+		for (int i: A)
+		{
+			<a>// update maximum sum of sub-array "ending" at index i (by adding
+			// current element to maximum sum ending at previous index)</a>
+			maxEndingHere = maxEndingHere + i;
+
+			<a>// maximum sum is should be more than the current element</a>
+			maxEndingHere = Integer.max(maxEndingHere, i);
+
+			<a>// update result if current sub-array sum is found to be greater</a>
+			maxSoFar = Integer.max(maxSoFar, maxEndingHere);
+		}
+
+		return maxSoFar;
+	}
+
+	public static void main(String[] args)
+	{
+		int[] A = { -8, -3, -6, -2, -5, -4 };
+
+		System.out.println("The sum of contiguous subarray with the largest sum is " +
+				kadaneNeg(A));
+
+	}
+}
+           
+    </pre>
+ 	       <br>
+ 	<h3 id="A2" id="a2">N/2 Greatest Number OR Moore's Voting Algorithm</h3>
+ 	<p style="color: white; font-size: 20px;"> Write a program to find which number in the given array is occuring more than N/2 times, where N is number 
+ 	of elements in the array, if it given that one such number always exist.</p>
+<p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+
+ 	<pre style="color: white; font-size:20px;">
+    This is a two-step process: 
+         (1)The first step gives the element that maybe the majority element in the array. If there is 
+         a majority element in an array, then this step will definitely return majority element, otherwise, 
+         it will return candidate for majority element.
+         (2)Check if the element obtained from the above step is majority element. This step is necessary 
+         as there might be no majority element.
+ 	</pre>
+ 	<pre class="content2">
+ 		Input:{ 1, 3, 3, 3, 2 }
+ 		Output:3
+ 	</pre>
+ 	<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+ 	<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+  class Solution {
+    public int majorityElement(int[] nums) {
+        <a>// using Moore's Voting Algorithm</a>
+        int maj_index=0, count = 1;
+        int i;
+        for(i=0;i&lt;nums.length;i++){
+            if(nums[maj_index]==nums[i]){
+                count++;
+            }
+            else{
+                count--;
+            }
+            if(count==0){
+                maj_index=i;
+                count=1;
+            }
+        }
+        return nums[maj_index];
+        
+    }
+}
+    </pre>
+ 	       <br>
+ 	<h3 id="A3" id="a3"> N/3 Greatest Number</h3>
+ 	 <p style="color: white; font-size: 20px;">Given an integer array of size n, find all elements that appear more than  n/3  times.</p>
+ 	<pre class="content2">
+        Input:[3,2,3]
+ 		Output:3
+ 		Input:[1,2]
+ 		Output:[1,2]
+ 	</pre>
+ 	<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+
+ 	<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+  class Solution {
+    public List&lt;Integer&gt; majorityElement(int[] nums) {
+      List&lt;Integer&gt; ans = new ArrayList&lt;&gt;();
+      int n=nums.length;  
+      DataStructure[] ds = new DataStructure[2];
+      ds[0] = new DataStructure();
+      ds[1] = new DataStructure(); 
+      for(int i=0;i&lt;n;i++)
+      {
+          int j;
+          inner: for(j=0;j<2;j++)
+          {
+              if(ds[j].e==nums[i])
+              {
+                  ds[j].c +=1;
+                  break inner;
+              }
+          }
+          <a>/* If nums[i] is not present in ds[] */</a>
+        if (j == 2) 
+        { 
+            int l; 
+              
+            <a>/* If there is position available in ds[], then place  
+              nums[i] in the first available position and set count as 1*/</a>
+            inner: for (l=0; l<2; l++) 
+            { 
+                if (ds[l].c == 0) 
+                { 
+                    ds[l].e = nums[i]; 
+                    ds[l].c = 1; 
+                    break inner; 
+                } 
+            } 
+  
+            <a>/* If all the position in the ds[] are filled, then  
+               decrease count of every element by 1 */</a>
+            if (l == 2) 
+                for (l=0; l<2; l++) 
+                    ds[l].c -= 1; 
+        } 
+    }
+        <a>/*Step 3: Check actual counts of potential candidates in ds[]*/</a>
+        int lim= ds[1].c>0?2:1;
+    for (int i=0; i&lt;lim; i++) 
+    { 
+        <a>// Calculate actual count of elements</a>
+        int ac = 0;  // actual count 
+        for (int j=0; j&lt;n; j++) 
+            if (nums[j] == ds[i].e) 
+                ac++; 
+  
+        <a>// If actual count is more than n/k, then print it</a>
+        if (ac > n/3) 
+           ans.add(ds[i].e); 
+    }
+     return ans;
+    }
+}
+class DataStructure
+{
+    int e;
+    int c;
+    public void DataStructure(){
+        e=0;
+        c=0;
+    }
+}
+    </pre>
+   <br>
+ 	<h3 id="A4" id="a4">Merge Overlapping Intervals</h3>
+ 	<p style="color: white; font-size: 20px;">Given a collection of intervals, merge all overlapping intervals.</p>
+ 	<pre class="content2">
+        Input:[[1,3],[2,6],[8,10],[15,18]]
+ 		Output:[[1,6],[8,10],[15,18]]
+ 		Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
+ 		Input:[[1,4],[4,5]]
+ 		Output:[[1,5]]
+ 		Explanation: Intervals [1,4] and [4,5] are considered overlapping.
+ 	</pre>
+ 	<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+ 	<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+  class Solution {
+    public int[][] merge(int[][] intervals) {
+        int n=intervals.length;
+        List&lt;Job&gt; ans = new ArrayList&lt;>();
+        for(int i=0;i&lt;n;i++)
+        {
+          ans.add(new Job((intervals[i][0]), (intervals[i][1])));
+        }
+        Collections.sort(ans , Comparator.comparingInt( x -> x.start));
+        for(int i=0;i&lt;n-1;) {
+        	if(ans.get(i).finish>=ans.get(i+1).start) {
+        		ans.get(i).finish = Math.max(ans.get(i+1).finish, 
+        		                             ans.get(i).finish);
+        		ans.remove(i+1);
+        		n--;
+        	    continue;
+        	}
+        	i++;
+        }
+        int[][] temp = new int[ans.size()][2];
+        for(int i=0;i&lt;ans.size();i++) {
+        	temp[i][0]=ans.get(i).start;
+        	temp[i][1]=ans.get(i).finish;
+        }
+        return temp;
+        }
+}
+class Job{
+    int start,finish;
+    Job( int start , int finish){
+        this.start = start;
+        this.finish = finish;
+    }
+}
+           	</pre>
+ 	<h3 id="A5" id="a5">Rotate Matrix</h3>
+ 	<p style="color: white; font-size: 20px;"> You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).</p>
+ 	<img src="RotateMatrix.jpg" width="60%" height="300px" style="border:3px solid red;">
+ 	<pre class="content2">
+        Input:matrix = [[1,2,3],[4,5,6],[7,8,9]]
+ 		Output:[[7,4,1],[8,5,2],[9,6,3]]
+ 		Input:matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
+ 		Output:[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
+ 	</pre>
+ 	<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+ 	<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+  class Solution {
+    public void rotate(int[][] matrix) {
+       int n=matrix.length;
+       int x1=0,y1=0,x2=0,y2=0,x3=0,y3=0,x4=0,y4=0;
+        int k=n;
+       for(int i=1;i<=n/2;i++){
+           x1=i-1;
+           y1=i-1;
+           x2=i-1;
+           y2=n-i;
+           x3=n-i;
+           y3=n-i;
+           x4=n-i;
+           y4=i-1;
+           for(int j=1;j&lt;k;j++){
+           int temp=matrix[x4][y4];
+           matrix[x4][y4] = matrix[x3][y3];
+           matrix[x3][y3] = matrix[x2][y2];
+           matrix[x2][y2] = matrix[x1][y1];
+           matrix[x1][y1] = temp;
+           y1++;
+           x2++;
+           y3--;
+           x4--;
+           }
+           k=k-2;
+       }
+    }
+}
+           	</pre>
+ 	<h3 id="A6" id="a6">Best Time to Buy and Sell Stock</h3>
+ 	<p style="color: white; font-size: 20px;"> Say you have an array for which the ith element is the price of a given stock on day i.<br>
+    If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock),
+    design an algorithm to find the maximum profit.<br>
+    Note that you cannot sell a stock before you buy one.
+    </p>
+ 	<pre class="content2">
+        Input:[7,1,5,3,6,4]
+ 		Output:5
+ 		Input:matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
+ 		Output:[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
+ 	</pre>
+ 	<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+ 	<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+  class Solution {
+    public void rotate(int[][] matrix) {
+       int n=matrix.length;
+       int x1=0,y1=0,x2=0,y2=0,x3=0,y3=0,x4=0,y4=0;
+        int k=n;
+       for(int i=1;i<=n/2;i++){
+           x1=i-1;
+           y1=i-1;
+           x2=i-1;
+           y2=n-i;
+           x3=n-i;
+           y3=n-i;
+           x4=n-i;
+           y4=i-1;
+           for(int j=1;j&lt;k;j++){
+           int temp=matrix[x4][y4];
+           matrix[x4][y4] = matrix[x3][y3];
+           matrix[x3][y3] = matrix[x2][y2];
+           matrix[x2][y2] = matrix[x1][y1];
+           matrix[x1][y1] = temp;
+           y1++;
+           x2++;
+           y3--;
+           x4--;
+           }
+           k=k-2;
+       }
+    }
+}
+    </pre>
+</div>
+ </div>
+ <footer class="footer-distributed">
+
+      <div class="footer-left">
+        <h3>About<span>CodersCheckList</span></h3>
+
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          |
+          <a href="#atop">Back to Top</a>
+        </p>
+
+        <p class="footer-company-name">© 2020 Interview Preparation Platform</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Campus -1, 19th KM Stone, NH 24,</span>
+            Ghaziabad, Uttar Pradesh 201009</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 123456789</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ujjwal.19b101048@abes.ac.in">ujjwal.19b101048@abes.ac.in</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:vartika.19b101085@abes.ac.in">vartika.19b101085@abes.ac.in</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Website</span>
+          An Interview Preparation Platform</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+       
+</body>
+</html>

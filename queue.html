@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Queue</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+     <header>
+  <h1 id="qtop" style="color: red; font-family: algerian; font-size: 250%; text-align: center;">CodersCheckList<img class="image" src="project_icon.jpg" style="float:right;width:80px;margin-right:20px;height:80px;"></h1>
+  </header>
+  <br>
+  <!-- top navigation bar container-->
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="array.html">Arrays</a>
+  <a href="string.html">Strings</a>
+  <a href="linkedlist.html">Linked-List</a>
+   <a href="stack.html">Stack</a>
+  <a href="queue.html" class="active">Queue</a>
+  <a href="heap.html">PriorityQueue</a>
+  <a href="set.html">Set And Map</a>
+  <a href="binarytree.html">Binary Tree</a>
+   <a href="binarysearchtree.html">Binary Search Tree</a>
+  <a href="graph.html">Graph</a>
+  <a href="trie.html">Trie</a>
+  <a href="segmenttree.html">Segment Tree</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!-- top navigation bar conatiner closed-->
+<!--sidebar conatiner start here--> 
+<h2>Queue</h2>
+<div class="leftsidebar">
+  <ul class="leftlist" style="margin-right: 5px; overflow: auto;">
+<li class="listheading">ARRAYS</li>
+    <li><a class="hyperlinks1" href="array.html#A1">Kadane's Algorithm</a></li>
+    <li><a class="hyperlinks1" href="array.html#A2">N/2 greatest number</a></li>
+    <li><a class="hyperlinks1" href="array.html#A3">N/3 greatest number</a></li>
+    <li><a class="hyperlinks1" href="array.html#A4">Merge Overlapping Intervals</a></li>
+    <li><a class="hyperlinks1" href="array.html#A5">Rotate Matrix</a></li>
+    <li><a class="hyperlinks1" href="array.html#A6"> Buy/Sell Stocks-I,II,III</a></li>
+    <li class="listheading">STRING</li>
+    <li><a class="hyperlinks1" href="string.html#S1">Pattern Matching Algorithms(KMP+Rabin Karp)</a></li>
+    <li><a class="hyperlinks1" href="string.html#S2">Using String Builder Class</a></li>
+    <li><a class="hyperlinks1" href="string.html#S3">String Compression Algorithm</a></li>
+    <li class="listheading">LINKEDLIST</li>
+    <li><a class="hyperlinks1" href="linkedlist.html#L1">Implementation of LinkedList</a></li>
+    <li><a class="hyperlinks1" href="linkedlist.html#L2">Detect cycle in a LinkedList</a></li>
+    <li><a class="hyperlinks1" href="linkedlist.html#L3">Reverse a LinkedList</a></li>
+    <li class="listheading">STACK</li>
+    <li><a class="hyperlinks1" href="stack.html#ST1">Implementation of Stack</a></li>
+    <li><a class="hyperlinks1" href="stack.html#ST2">Balance paranthesis</a></li>
+    <li><a class="hyperlinks1" href="stack.html#ST3">Trapping rain water</a></li>
+    <li class="listheading">QUEUE</li>
+    <li><a class="hyperlinks1" href="queue.html#Q1">Implementation of Queue + Deque</a></li>
+    <li><a class="hyperlinks1" href="queue.html#Q2">Sliding window maximum</a></li>
+    <li><a class="hyperlinks1" href="queue.html#Q3">Implement BFS</a></li>
+    <li><a class="hyperlinks1" href="queue.html#Q4">Implement Level Order in Binary Tree</a></li>
+    <li class="listheading">PRIORITY QUEUE</li>
+    <li><a class="hyperlinks1" href="heap.html#H1">Implementation of Heap Data structure</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H2">Connect n ropes with min cost</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H3">Median of running stream</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H4">LRU cache</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H5">LFU cache</a></li>
+    <li class="listheading">SET &amp; MAP</li>
+    <li><a class="hyperlinks1" href="set.html#M1">Internal working of HashMap</a></li>
+    <li><a class="hyperlinks1" href="set.html#M2">4-sum</a></li>
+    <li><a class="hyperlinks1" href="set.html#M3">Longest substring without repeat</a></li>
+    <li class="listheading">BINARY TREE</li>
+    <li><a class="hyperlinks1" href="binarytree.html#BT1">Implementation:insert,delete,traverse</a></li>
+    <li><a class="hyperlinks1" href="binarytree.html#BT2">Invert a binary tree</a></li>
+    <li><a class="hyperlinks1" href="binarytree.html#BT3">Lowest common ancestor</a></li>
+    <li class="listheading">BINARY SEARCH TREE</li>
+    <li><a class="hyperlinks1" href="binarysearchtree.html#BST1">Implementation</a></li>
+    <li><a class="hyperlinks1" href="binarysearchtree.html#BST2">Check if a tree is BST or not</a></li>
+    <li><a class="hyperlinks1" href="binarysearchtree.html#BST3">AVL tree and rotation</a></li>
+    <li class="listheading">GRAPH</li>
+    <li><a class="hyperlinks1" href="graph.html#G1">Implementation, BFS and DFS traversals</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G2">Topological Sorting</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G3">Bellman ford Algorithm</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G4">Dijkstra's Algorithm</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G5">Prim's Algorithm</a></li>
+    <li class="listheading">TRIE</li>
+    <li><a class="hyperlinks1" href="trie.html#TR1">Implementation-insert and search</a></li>
+    <li class="listheading">SEGMENT TREES</li>
+    <li><a class="hyperlinks1" href="segmenttree.html#TS1">Implementation</a></li>
+  </ul>
+</div>
+<!-- sidebar closed-->
+<!--programs of queue start here--> 
+ <div class="content1">
+  <div style="margin-left: 19%;">
+  <h3 id="Q1">Implementation Of Queue</h3>
+   <p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+      <p style="color: white; font-size: 20px;"> 
+        Implementing Queue Data Structure using concept of linked-list.<br><br>
+    Queue is basically a line in which element can enter only from rear end and exit from front end.
+    Queue follows concept of FIFO unlike stack which follows LIFO.<br>
+    <strong>FIFO:- First In First Out</strong><br>
+    <strong>Enqueue:-</strong> Adding an element to the rear end of queue.<br>
+    <strong>Dequeue:-</strong> Deleting an element from the front end of the queue.
+ 	</p>
+ 	<img src="queue1.jpg" width="50%" height="300px" style="border:3px solid red;">
+  <p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+<a>//A class to represent a queue 
+//The queue, front stores the front node of LL and rear stores the 
+//last node of LL</a>
+public class QueueLL {
+ QNode front,rear;
+ public void QueueLL() {
+	 this.front = null;
+	 this.rear = null;
+ }
+<a>//Method to add an key to the queue.</a>
+ public void enQueue(int key) {
+	<a>// Create a new LL node</a>
+	 QNode temp = new QNode(key);
+	 if(this.rear == null) {
+		 this.front=this.rear=temp;
+	 }
+	 this.rear.next=temp;
+	 this.rear=temp;
+ }
+<a>//Method to remove an key from queue.</a>
+ public int deQueue() {
+	 <a>// if queue is empty return null.</a>
+	 if(this.front == null) {
+		 return Integer.MIN_VALUE; 
+	 }
+	 <a>// store key of front and shift front to the next node</a>
+	 QNode temp = this.front;
+	 this.front=this.front.next;
+	 <a>// if front becomes null then assign null to the rear also</a>
+	 if(this.front==null) {
+		 this.rear=null;
+	 }
+	 return temp.key;
+ }
+}
+
+<a>//Java program for linked-list implementation of queue 
+
+//A linked list (LL) node to store a queue entry</a> 
+class QNode{
+ int key;
+ QNode next;
+ public QNode(int key) {
+	 this.key=key;
+	 this.next=null;
+ }
+}
+           	
+    </pre>
+  <h3>Implementation Of Deque OR Doubly-Ended Queue</h3>
+      <p style="color: white; font-size: 20px;"> 
+ 	Implementing Deque Data Structure using concept of linked-list.
+  Deque is basically a queue in which elements can be entered or removed from both the ends. 
+ 	</p>
+ 	<img src="deque.jpg" width="50%" height="300px" style="border:3px solid red;">
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+  public class DoublyEndedQueue {
+  Node front;
+  Node rear;
+  public void QueueLL() {
+		 this.front = null;
+		 this.rear = null;
+	 }
+<a>//Method to add an key to the deque.</a>
+ public void addFirst(int key) {
+	<a>// Create a new node</a>
+	 Node temp = new Node(key);
+	 if(this.rear == null) {
+		 this.front=this.rear=temp;
+	 }
+	 this.front.prev=temp;
+	 temp.next=front;
+	 this.front=temp;
+}
+<a>//Method to add an key to the deque.</a>
+public void addLast(int key) {
+	<a>// Create a new node</a>
+	 Node temp = new Node(key);
+	 if(this.rear == null) {
+		 this.front=this.rear=temp;
+	 }
+	 this.rear.next=temp;
+	 temp.prev=rear;
+	 this.rear=temp;
+}
+<a>//Method to remove an key from deque.</a>
+public int pollFirst() {
+	 <a>// if deque is empty return null.</a>
+	 if(this.front == null) {
+		 return Integer.MIN_VALUE; 
+	 }
+	 <a>// store key of front and shift front to the next node</a>
+	 Node temp = this.front;
+	 this.front=this.front.next;
+	 <a>// if front becomes null then assign null to the rear also</a>
+	 if(this.front==null) {
+		 this.rear=null;
+	 }
+	 else {
+		 front.prev=null;
+	 }
+	 return temp.key;
+}
+<a>//Method to remove an key from deque.</a>
+public int pollLast() {
+	 <a>// if deque is empty return null.</a>
+	 if(this.rear == null) {
+		 return Integer.MIN_VALUE; 
+	 }
+	 <a>// store key of rear and shift rear to the prev node</a>
+	 Node temp = this.rear;
+	 this.rear=this.rear.prev;
+	 <a>// if rear becomes null then assign null to the front also</a>
+	 if(this.rear==null) {
+		 this.front=null;
+	 }
+	 else {
+		 rear.next=null;
+	 }
+	 return temp.key;
+}
+public int peekFirst() {
+	if(this.front!=null)
+		return this.front.key;
+	return Integer.MIN_VALUE;
+}
+public int peekLast() {
+	if(this.rear!=null)
+		return this.rear.key;
+	return Integer.MIN_VALUE;
+}
+}
+class Node{
+	int key;
+    Node prev;
+    Node next;
+    public Node(int key) {
+    	this.key=key;
+    	this.prev=null;
+    	this.next=null;
+    }
+}
+           
+    </pre>
+ 	<h3 id="Q2">Sliding Window Maximum</h3>
+      <p style="color: white; font-size: 20px;"> 
+ 	You are given an array of integers nums, there is a sliding window of 
+ 		size k which is moving from the very left of the array to the very right. You can only see the k numbers in 
+ 		the window. Each time the sliding window moves right by one position.
+ 		Return the max sliding window. 
+ 	</p>
+ 	<pre class="content2">
+  Input:arr[] = {1, 2, 3, 1, 4, 5, 2, 3, 6}, K = 3
+ 	Output:3 3 4 5 5 5 6
+ 	Explanation: Maximum of 1, 2, 3 is 3
+             Maximum of 2, 3, 1 is 3
+             Maximum of 3, 1, 4 is 4
+             Maximum of 1, 4, 5 is 5
+             Maximum of 4, 5, 2 is 5 
+             Maximum of 5, 2, 3 is 5
+             Maximum of 2, 3, 6 is 6
+ 	</pre>
+ 	<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+  <a>// Java Program to find the maximum for 
+// each and every contiguous subarray of size k.</a>
+import java.util.Deque;
+import java.util.LinkedList;
+ 
+public class SlidingWindow 
+{
+ 
+    <a>// A Dequeue (Double ended queue) 
+    // based method for printing 
+    // maximum element of
+    // all subarrays of size k</a>
+    static void printMax(int arr[], int n, int k)
+    {
+         
+        <a>// Create a Double Ended Queue, Qi 
+        // that will store indexes of array elements
+        // The queue will store indexes of 
+        // useful elements in every window and it will
+        // maintain decreasing order of values 
+        // from front to rear in Qi, i.e.,
+        // arr[Qi.front[]] to arr[Qi.rear()] 
+        // are sorted in decreasing order</a>
+        Deque&lt;Integer&gt; Qi = new LinkedList&lt;Integer&gt;();
+ 
+        <a>/* Process first k (or first window)
+        elements of array */</a>
+        int i;
+        for (i = 0; i &lt; k; ++i) 
+        {
+            
+            <a>// For every element, the previous 
+            // smaller elements are useless so
+            // remove them from Qi</a>
+            while (!Qi.isEmpty() && arr[i] &gt;= 
+                           arr[Qi.peekLast()])
+               
+                <a>// Remove from rear</a>
+                Qi.removeLast(); 
+ 
+            <a>// Add new element at rear of queue</a>
+            Qi.addLast(i);
+        }
+ 
+        <a>// Process rest of the elements, 
+        // i.e., from arr[k] to arr[n-1]</a>
+        for (; i &lt; n; ++i) 
+        {
+         
+            <a>// The element at the front of the
+            // queue is the largest element of
+            // previous window, so print it</a>
+            System.out.print(arr[Qi.peek()] + " ");
+ 
+            <a>// Remove the elements which 
+            // are out of this window</a>
+            while ((!Qi.isEmpty()) && Qi.peek() &lt;= 
+                                             i - k)
+                Qi.removeFirst();
+ 
+            <a>// Remove all elements smaller 
+            // than the currently
+            // being added element (remove 
+            // useless elements)</a>
+            while ((!Qi.isEmpty()) && arr[i] &gt;= 
+                              arr[Qi.peekLast()])
+                Qi.removeLast();
+ 
+            <a>// Add current element at the rear of Qi</a>
+            Qi.addLast(i);
+        }
+ 
+        <a>// Print the maximum element of last window</a>
+        System.out.print(arr[Qi.peek()]);
+    }
+ 
+    <a>// Driver program to test above functions</a>
+    public static void main(String[] args)
+    {
+        int arr[] = { 12, 1, 78, 90, 57, 89, 56 };
+        int k = 3;
+        printMax(arr, arr.length, k);
+    }
+}
+           
+    </pre>
+ 	<h3 id="Q3">Breadth First Search or BFS for a Graph</h3>
+  <
+<p style="color: white; font-size: 20px;">
+ 	  Breadth First Traversal (or Search) for a graph is similar to 
+ 		Breadth First Traversalof a tree . The only catch here is, unlike trees, graphs may 
+ 		contain cycles, so we may come to the same node again.<br>
+ 	    To avoid processing a node more than once, we use a boolean visited array. For simplicity, it is assumed that all 
+ 	    vertices are reachable fromthe starting vertex.<br>
+      For example, in the following graph, we start traversal from vertex 2. When we come to vertex 0, we look for all 
+      adjacent vertices of it.2 is also an adjacent vertex of 0. If we don’t mark visited vertices, then 2 will be processed
+       again and it will become a non-terminating process. A Breadth First Traversal of the following graph is 2, 0, 3, 1. 
+ 	</p>
+ 	<img src="bfsgraph.jpg" width="50%" height="300px" style="border:3px solid red;">
+ 	  <p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+  <a>// java program to print BFS traversal from 
+// a given source vertex.
+// BFS(int s) traverses vertices reachable from s.</a>
+import java.util.*;
+import java.io.*;
+
+<a>// This class represents a directed graph using 
+// adjacency list representation</a>
+public class BFSGraph {
+  private int V; <a>// No. of vertices</a>
+  private LinkedList&lt;Integer&gt; adj[]; //Adjency Lists
+  
+  <a>// Constructor</a>
+  BFSGraph(int v)
+  {
+	  V=v;
+	  adj=new LinkedList[v];
+	  for(int i=0;i&lt;v;++i)
+		  adj[i]=new LinkedList();
+  }
+<a>//Function to add an edge into the graph</a>
+  void addEdge(int v,int w) 
+  { 
+      adj[v].add(w); 
+  }
+  
+<a>// prints BFS traversal from a given source s</a>
+  void BFS(int s)
+  {
+	  <a>// Mark all the vertices as not visited(by default
+	  // set as false)</a>
+	  boolean visited[]=new boolean[V];
+	  <a>// Create a queue for BFS</a>
+	  LinkedList&lt;Integer&gt; queue = new LinkedList&lt;Integer&gt;();
+	  <a>// Mark the current node as visited and enqueue it</a>
+	  visited[s]=true;
+	  queue.add(s);
+	  while(queue.size()!=0)
+	  {
+		 <a>// Dequeue a vertex from queue and print it</a>
+		  s=queue.poll();
+		  System.out.print(s+" ");
+		  
+		  <a>// Get all adjacent vertices of the dequeued 
+		  // vertex s. If a adjacent has not been visited, 
+		  // then mark it visited and enqueue it.</a>
+		  Iterator&lt;Integer&gt; i=adj[s].listIterator();
+		  while(i.hasNext())
+		  {
+			  int n=i.next();
+			  if(!visited[n])
+			  {
+				  visited[n]=true;
+				  queue.add(n);
+			  }
+		  }
+	  }
+   }
+}
+           	
+    </pre>
+ 	<h3 id="Q4">BST Level-Order Traversal</h3>
+<p style="color: white; font-size: 20px;">
+ 	A level-order traversal, also known as a 
+ 		breadth-first search, visits each level of a tree's nodes from left to right, top to bottom. 
+ 		You are given a pointer, root, pointing to the root of a binary search tree. Complete the levelOrder
+ 	    function provided in your editor so that it prints the level-order traversal of the binary search tree. 
+ 	</p>
+ 	<pre class="content2">
+  Input:6,3,5,4,7,2,1
+ 	Output:3,2,5,1,4,7
+ </pre>
+ 		<img src="bst.jpg" width="50%" height="300px" style="border:3px solid red;">
+ 
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+  import java.util.*;
+import java.io.*;
+class Node{
+    Node left,right;
+    int data;
+    Node(int data){
+        this.data=data;
+        left=right=null;
+    }
+}
+class Solution{
+static Deque&lt;Node&gt; q=new LinkedList&lt;&gt;();
+static void levelOrder(Node root){
+      System.out.print(root.data+" ");
+      if(root.left!=null){
+             q.addLast(root.left);
+      }
+      if(root.right!=null){
+             q.addLast(root.right);
+      }
+      if(!q.isEmpty())
+             levelOrder(q.removeFirst());
+    }
+
+public static Node insert(Node root,int data){
+        if(root==null){
+            return new Node(data);
+        }
+        else{
+            Node cur;
+            if(data<=root.data){
+                cur=insert(root.left,data);
+                root.left=cur;
+            }
+            else{
+                cur=insert(root.right,data);
+                root.right=cur;
+            }
+            return root;
+        }
+    }
+    public static void main(String args[]){
+            Scanner sc=new Scanner(System.in);
+            int T=sc.nextInt();
+            Node root=null;
+            while(T-->0){
+                int data=sc.nextInt();
+                root=insert(root,data);
+            }
+            levelOrder(root);
+        }	
+}
+           	</pre>
+</div>
+ </div>
+ <footer class="footer-distributed">
+
+      <div class="footer-left">
+        <h3>About<span>CodersCheckList</span></h3>
+
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          |
+          <a href="#qtop">Back to Top</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Interview Preparation Platform</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Campus -1, 19th KM Stone, NH 24,</span>
+            Ghaziabad, Uttar Pradesh 201009</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 123456789</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ujjwal.19b101048@abes.ac.in">ujjwal.19b101048@abes.ac.in</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:vartika.19b101085@abes.ac.in">vartika.19b101085@abes.ac.in</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Website</span>
+          An Interview Preparation Platform</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+ </body>
+</html>

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PriorityQueue or Heap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+     <header>
+  <h1 id="hetop" style="color: red; font-family: algerian; font-size: 250%; text-align: center;">CodersCheckList<img class="image" src="project_icon.jpg" style="float:right;width:80px;margin-right:20px;height:80px;"></h1>
+  </header>
+  <br>
+  <!-- top navigation bar container-->
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="array.html">Arrays</a>
+  <a href="string.html">Strings</a>
+  <a href="linkedlist.html">Linked-List</a>
+   <a href="stack.html">Stack</a>
+  <a href="queue.html">Queue</a>
+  <a href="heap.html" class="active">PriorityQueue</a>
+  <a href="set.html">Set And Map</a>
+  <a href="binarytree.html">Binary Tree</a>
+   <a href="binarysearchtree.html">Binary Search Tree</a>
+  <a href="graph.html">Graph</a>
+  <a href="trie.html">Trie</a>
+  <a href="segmenttree.html">Segment Tree</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!-- top navigation bar conatiner closed-->
+<!--sidebar conatiner start here--> 
+<h2>Priority Queue OR Heap</h2>
+<div class="leftsidebar">
+  <ul class="leftlist" style="margin-right: 5px; overflow: auto;">
+    <<li class="listheading">ARRAYS</li>
+    <li><a class="hyperlinks1" href="array.html#A1">Kadane's Algorithm</a></li>
+    <li><a class="hyperlinks1" href="array.html#A2">N/2 greatest number</a></li>
+    <li><a class="hyperlinks1" href="array.html#A3">N/3 greatest number</a></li>
+    <li><a class="hyperlinks1" href="array.html#A4">Merge Overlapping Intervals</a></li>
+    <li><a class="hyperlinks1" href="array.html#A5">Rotate Matrix</a></li>
+    <li><a class="hyperlinks1" href="array.html#A6"> Buy/Sell Stocks-I,II,III</a></li>
+    <li class="listheading">STRING</li>
+    <li><a class="hyperlinks1" href="string.html#S1">Pattern Matching Algorithms(KMP+Rabin Karp)</a></li>
+    <li><a class="hyperlinks1" href="string.html#S2">Using String Builder Class</a></li>
+    <li><a class="hyperlinks1" href="string.html#S3">String Compression Algorithm</a></li>
+    <li class="listheading">LINKEDLIST</li>
+    <li><a class="hyperlinks1" href="linkedlist.html#L1">Implementation of LinkedList</a></li>
+    <li><a class="hyperlinks1" href="linkedlist.html#L2">Detect cycle in a LinkedList</a></li>
+    <li><a class="hyperlinks1" href="linkedlist.html#L3">Reverse a LinkedList</a></li>
+    <li class="listheading">STACK</li>
+    <li><a class="hyperlinks1" href="stack.html#ST1">Implementation of Stack</a></li>
+    <li><a class="hyperlinks1" href="stack.html#ST2">Balance paranthesis</a></li>
+    <li><a class="hyperlinks1" href="stack.html#ST3">Trapping rain water</a></li>
+    <li class="listheading">QUEUE</li>
+    <li><a class="hyperlinks1" href="queue.html#Q1">Implementation of Queue + Deque</a></li>
+    <li><a class="hyperlinks1" href="queue.html#Q2">Sliding window maximum</a></li>
+    <li><a class="hyperlinks1" href="queue.html#Q3">Implement BFS</a></li>
+    <li><a class="hyperlinks1" href="queue.html#Q4">Implement Level Order in Binary Tree</a></li>
+    <li class="listheading">PRIORITY QUEUE</li>
+    <li><a class="hyperlinks1" href="heap.html#H1">Implementation of Heap Data structure</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H2">Connect n ropes with min cost</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H3">Median of running stream</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H4">LRU cache</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H5">LFU cache</a></li>
+    <li class="listheading">SET &amp; MAP</li>
+    <li><a class="hyperlinks1" href="set.html#M1">Internal working of HashMap</a></li>
+    <li><a class="hyperlinks1" href="set.html#M2">4-sum</a></li>
+    <li><a class="hyperlinks1" href="set.html#M3">Longest substring without repeat</a></li>
+    <li class="listheading">BINARY TREE</li>
+    <li><a class="hyperlinks1" href="binarytree.html#BT1">Implementation:insert,delete,traverse</a></li>
+    <li><a class="hyperlinks1" href="binarytree.html#BT2">Invert a binary tree</a></li>
+    <li><a class="hyperlinks1" href="binarytree.html#BT3">Lowest common ancestor</a></li>
+    <li class="listheading">BINARY SEARCH TREE</li>
+    <li><a class="hyperlinks1" href="binarysearchtree.html#BST1">Implementation</a></li>
+    <li><a class="hyperlinks1" href="binarysearchtree.html#BST2">Check if a tree is BST or not</a></li>
+    <li><a class="hyperlinks1" href="binarysearchtree.html#BST3">AVL tree and rotation</a></li>
+    <li class="listheading">GRAPH</li>
+    <li><a class="hyperlinks1" href="graph.html#G1">Implementation, BFS and DFS traversals</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G2">Topological Sorting</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G3">Bellman ford Algorithm</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G4">Dijkstra's Algorithm</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G5">Prim's Algorithm</a></li>
+    <li class="listheading">TRIE</li>
+    <li><a class="hyperlinks1" href="trie.html#TR1">Implementation-insert and search</a></li>
+    <li class="listheading">SEGMENT TREES</li>
+    <li><a class="hyperlinks1" href="segmenttree.html#TS1">Implementation</a></li>
+  </ul>
+</div>
+<!-- sidebar closed-->
+<!--programs of heap start here--> 
+ <div class="content1">
+  <div style="margin-left: 19%;">
+   <h3 id="H1">Implementation Of Priority Queue OR Heap Data Structure</h3>
+   <p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+      <p style="color: white; font-size: 20px;"> 
+ 	A Heap is a special Tree-based data structure in which the tree is a 
+ 	complete binary tree. Generally, Heaps can be of two types:<br>
+        (1)<strong style="text-decoration-line: underline;">Max-Heap:</strong> In a Max-Heap the key present at the root node must be 
+        greatest among the keys present at all of it’s children. The same property
+        must be recursively true for all sub-trees in that Binary Tree.<br><br>
+        (2)<strong style="text-decoration-line: underline;">Min-Heap:</strong> In a Min-Heap the key present at the root node must be minimum 
+        among the keys present at all of it’s children. The same property must be 
+        recursively true for all sub-trees in that Binary Tree.
+ 	</p>
+ 	<img src="heap.jpg" width="50%" height="250px" style="border:3px solid red;">
+ 	<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+  
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+  <a>// Java implementation of Min Heap</a>
+public class MinHeap {
+   private int[] Heap;
+   private int size;
+   private int maxsize;
+   
+   private static final int FRONT = 1;
+   public MinHeap(int maxsize)
+   {
+	   this.maxsize=maxsize;
+	   this.size=0;
+	   Heap = new int[this.maxsize+1];
+	   Heap[0] = Integer.MIN_VALUE;
+   }
+   
+   <a>// Function to return the position of
+   // the parent for the node currently at pos</a>
+   private int parent(int pos)
+   {
+	   return pos/2;
+   }
+   <a>// Function to return the position of the 
+   // left child for the node currently at pos</a>
+   private int leftChild(int pos)
+   {
+	   return 2*pos;
+   }
+   
+   <a>// Function to return the position of the 
+   //right child for the node currently at pos</a>
+   private int rightChild(int pos)
+   {
+	   return (2*pos)+1;
+   }
+   <a>// Function that returns true if the passed 
+   // node is a leaf node</a>
+   private boolean isLeaf(int pos)
+   {
+	   if (pos>=(size/2) && pos<=size) {
+		 return true;  
+	   }
+	   return false;
+   }
+   
+   <a>// Function to swap the two nodes of the 
+   // heap</a>
+   private void swap(int fpos, int spos)
+   {
+	   int tmp;
+	   tmp = Heap[fpos];
+	   Heap[fpos] = Heap[spos];
+	   Heap[spos] = tmp;
+   }
+   
+   <a>// function to heapify the node at pos</a>
+   private void minHeapify(int pos)
+   {
+     <a>// If the node is a non-leaf node and 
+	 // greater than any of its child</a>
+     if(!isLeaf(pos)) {
+    	 if(Heap[pos]>Heap[leftChild(pos)]
+    	  || Heap[pos] > Heap[rightChild(pos)]) {
+    		
+    		 <a>//Swap with the left child and heapify
+    		 //the left child</a>
+    		 if(Heap[leftChild(pos)]&lt;Heap[rightChild(pos)]) {
+    			 swap(pos, leftChild(pos));
+    			 minHeapify(leftChild(pos));
+    		 }
+    		 else {
+    			 swap(pos, rightChild(pos));
+    			 minHeapify(rightChild(pos));
+    		 }
+    	 }
+     }
+   
+   }
+   <a>// Function to insert a node into the heap</a>
+   public void insert(int element) {
+	   if(size >= maxsize) {
+		   return;
+	   }
+	   Heap[++size] = element;
+	   int current = size;
+	   
+	   while(Heap[current] < Heap[parent(current)]) {
+		  swap(current, parent(current));
+		  current = parent(current);
+	   }
+   }
+   <a>// Function to print contents of the Heap</a>
+   public void print()
+   {
+	   for(int i=1;i&lt;size/2;i++) {
+		   System.out.println(" PARENT : "+Heap[i]
+				   + " LEFT CHILD : "+Heap[2*i]
+				   + " RIGHT CHILD : "+Heap[2*i+1]);
+		   System.out.println();
+	   }
+   }
+   <a>// function to build the min heap using
+   // the minHeapify</a>
+   public void minHeap()
+   {
+	   for(int pos = (size/2);pos>=1;pos--) {
+		   minHeapify(pos);
+	   }
+   }
+   <a>// Function to remove and return the minimum
+   // element from the heap</a>
+   public int remove() {
+	   int popped = Heap[FRONT];
+	   Heap[FRONT]=Heap[size--];
+	   minHeapify(FRONT);
+	   return popped;
+   }
+}
+</pre>
+ 	<h3 id="H2">Connect N ropes with minimum cost</h3>
+ 	<p style="color: white; font-size: 20px;"> 
+    There are given n ropes of different lengths, we need to connect these ropes 
+    into one rope. The cost to connect two ropes is equal to the sum of their lengths.
+    We need to connect the ropes with minimum cost.<br>
+    For example, if we are given 4 ropes of lengths 4, 3, 2, and 6. We can connect the 
+    ropes in the following ways:- 
+   <strong>1)</strong> First, connect ropes of lengths 2 and 3. Now we have three ropes of lengths 4, 6, and 5. 
+   <strong>2)</strong> Now connect ropes of lengths 4 and 5. Now we have two ropes of lengths 6 and 9. 
+   <strong>3)</strong> Finally connect the two ropes and all ropes have connected.<br><br>
+
+Total cost for connecting all ropes is 5 + 9 + 15 = 29. This is the optimized cost for 
+connecting ropes. Other ways of connecting ropes would always have same or more cost. 
+For example, if we connect 4 and 6 first (we get three strings of 3, 2 and 10), then connect 
+10 and 3 (we get two strings of 13 and 2). Finally we connect 13 and 2. Total cost in this way 
+is 10 + 13 + 15 = 38.<br>
+If we observe the above problem closely, we can notice that the lengths of the ropes which are 
+picked first are included more than once in total cost. Therefore, the idea is to connect the 
+smallest two ropes first and recur for remaining ropes. We put the smallest ropes down the tree
+so that they can be repeated multiple times rather than the longer ropes.
+ 	</p>
+  <p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+  
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+ 	<a>// Java program to connect n 
+// ropes with minimum cost</a> 
+import java.util.*; 
+  
+class ConnectRopes { 
+    static int minCost(int arr[], int n) 
+    { 
+        <a>// Create a priority queue</a> 
+        PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;Integer&gt;(); 
+  
+        <a>// Adding items to the pQueue</a> 
+        for (int i = 0; i < n; i++) { 
+            pq.add(arr[i]); 
+        } 
+  
+        <a>// Initialize result</a> 
+        int res = 0; 
+  
+        <a>// While size of priority queue 
+        // is more than 1</a> 
+        while (pq.size() > 1) { 
+            <a>// Extract shortest two ropes from pq</a> 
+            int first = pq.poll(); 
+            int second = pq.poll(); 
+  
+            <a>// Connect the ropes: update result 
+            // and insert the new rope to pq</a> 
+            res += first + second; 
+            pq.add(first + second); 
+        } 
+  
+        return res; 
+    } 
+  
+    <a>// Driver program to test above function</a> 
+    public static void main(String args[]) 
+    { 
+        int len[] = { 4, 3, 2, 6 }; 
+        int size = len.length; 
+        System.out.println("Total cost for connecting"
+                           + " ropes is " + minCost(len, size)); 
+    } 
+} 
+</pre>
+  <h3 id="H3">Median of Stream of Running Integers using STL</h3>
+  <p style="color: white; font-size: 20px;"> 
+ 	Given that integers are being read from a data stream. Find the median of all 
+ 	the elements read so far startingfrom the first integer till the last integer. 
+ 	This is also called the Median of Running Integers. The data stream can be any 
+ 	source of data, for example, a file, an array of integers, input stream etc.
+ 	</p>
+ 	<pre class="content2">
+    Input:5 10 15
+ 		Output:5, 7.5, 10
+ 		Input:1 2 3 4
+ 		Output:1, 1.5, 2, 2.5
+ 	</pre>
+ 	<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+  
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+<a>// Java code for Median of Stream of Running Integers using STL</a>
+import java.util.PriorityQueue;
+
+public class MedianOfStreamOfRunningIntegers {
+    <a> // Driver code</a>
+	public static void main(String[] args) {
+        int nums[]= {5,10,15,20,25,30,
+        		35,40,45,50};
+        double[] a=MOSORI(nums);
+        for(double x: a) {
+        	System.out.println(x+" ");
+        }
+	}
+	 <a> // Function that return array containing
+	 // Median of Stream of Running Integers</a>
+     public static double[] MOSORI(int[] a) {
+    	 PriorityQueue&lt;Integer&gt; pQueue = new 
+                 PriorityQueue&lt;Integer&gt;();
+    	 int l=a.length;
+    	 double[] ans=new double[l];
+    	 for(int i=0;i&lt;l;i++) {
+    		 pQueue.add(a[i]);
+    	 }
+    	 double z=0;
+    	 double e=0;
+    	 int k=l/2+1;
+    	 int c=0;
+    	 for(int i=1;i&lt;=k;i++) {
+    		 e=pQueue.poll();
+    		 if(i>1)
+    		   ans[c++]=(z+e)/2;
+    		 if(i&lt;k || l%2!=0) {
+    			 ans[c++]=e;
+    		 }
+    		 z=e;
+    	 }
+    	 return ans;
+     }
+}
+</pre>
+ 	<h3 id="H4">LRU(Least Recently Used) Cache</h3>
+  <p style="color: white; font-size: 20px;"> 
+ 	Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.<br><br>
+
+Implement the LRUCache class:<br>
+<strong>1)</strong> LRUCache(int capacity) Initialize the LRU cache with positive size capacity.<br>
+<strong>2)</strong> int get(int key) Return the value of the key if the key exists, otherwise return -1.<br>
+<strong>3)</strong> void put(int key, int value) Update the value of the key if the key exists. Otherwise, 
+add the key-value pair to the cache. If the number of keys exceeds the capacity from this 
+operation, evict the least recently used key.
+ 	</p>
+ 	<pre class="content2">
+  Input:[[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]
+ 	Output:[null, null, null, 1, null, -1, null, -1, 3, 4]
+ 
+Explanation
+LRUCache lRUCache = new LRUCache(2);
+lRUCache.put(1, 1); // cache is {1=1}
+lRUCache.put(2, 2); // cache is {1=1, 2=2}
+lRUCache.get(1);    // return 1
+lRUCache.put(3, 3); // LRU key was 2, evicts key 2, cache is {1=1, 3=3}
+lRUCache.get(2);    // returns -1 (not found)
+lRUCache.put(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
+lRUCache.get(1);    // return -1 (not found)
+lRUCache.get(3);    // return 3
+lRUCache.get(4);    // return 4
+ 
+ 	</pre>
+ 	<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+  
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+class LRUCache {
+    class Node{
+    int key;
+    int value;
+    Node prev;
+    Node next;
+        Node(){
+            
+        }
+        Node(int key, int value){
+            this.value = value;
+            this.key = key;
+        }
+    }
+
+    Node head;
+    Node tail;
+    int maxCapacity;
+    int currentCapacity;
+    HashMap&lt;Integer,Node&gt; map;
+    
+    public LRUCache(int capacity) {
+        maxCapacity=capacity;
+        map=new HashMap();
+        head=new Node(-1,-1);
+        tail=new Node(-1,-1);
+        
+        head.next=tail;
+        head.prev=null;
+        
+        tail.prev=head;
+        tail.next=null;
+    }
+    
+    public int get(int key) {
+        if(!map.containsKey(key))
+            return -1;
+        Node newRecentNode=map.get(key);
+        
+        if(newRecentNode.prev==head)
+            return newRecentNode.value;
+        detachNode(newRecentNode);
+        insertNode(newRecentNode);
+        return newRecentNode.value;
+    }
+    
+    public void put(int key, int value) {
+        Node oldRecentNode=head.next;
+        if(!map.containsKey(key)){
+            Node newPair=new Node(key,value);
+            map.put(key,newPair);
+            insertNode(newPair);
+            currentCapacity++;
+            
+            if(currentCapacity>maxCapacity){
+                Node penultimate = tail.prev;
+                detachNode(penultimate);
+                currentCapacity--;
+                map.remove(penultimate.key);
+            }
+        }
+        else{
+            Node updatedNode=map.get(key);
+            updatedNode.value=value;
+            if(updatedNode.prev!=head){
+                detachNode(updatedNode);
+                insertNode(updatedNode);
+            }
+        }
+    }
+    
+    void detachNode(Node node){
+        Node leftOfNodeAccessed = node.prev;
+        Node rightOfNodeAccessed = node.next;
+        rightOfNodeAccessed.prev=leftOfNodeAccessed;
+        leftOfNodeAccessed.next=rightOfNodeAccessed;
+        node.next=null;
+        node.prev=null;
+    }
+    
+    void insertNode(Node node){
+        Node oldRecentNode=head.next;
+        node.prev=head;
+        node.next=oldRecentNode;
+        head.next=node;
+        oldRecentNode.prev=node;
+    }
+}
+
+
+<a>/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */</a>
+    </pre>
+ 	<h3 id="H5">LFU(Least Frequently Used) Cache</h3>
+  <p style="color: white; font-size: 20px;"> 
+ 	 Design and implement a data structure for Least Frequently Used (LFU) cache.<br><br>
+
+Implement the LFUCache class:<br>
+<strong>1)</strong> LFUCache(int capacity) Initializes the object with the capacity of the data structure.<br>
+<strong>2)</strong> int get(int key) Gets the value of the key if the key exists in the cache. Otherwise, returns -1.<br>
+<strong>3)</strong> void put(int key, int value) Sets or inserts the value if the key is not already present.<br> 
+When the cache reaches its capacity, it should invalidate the least frequently used item 
+before inserting a new item. For this problem, when there is a tie (i.e., two or more keys 
+with the same frequency), the least recently used key would be evicted.
+<a>Notice that the number of times an item is used is the number of calls to the get and put 
+functions for that item since it was inserted. This number is set to zero when the item is removed.</a>
+ 	</p>
+ 	<pre class="content2">
+  Input:[[2], [1, 1], [2, 2], [1], [3, 3], [2], [3], [4, 4], [1], [3], [4]]
+ 	Output:[null, null, null, 1, null, -1, 3, null, -1, 3, 4]
+ 		
+Explanation
+LFUCache lFUCache = new LFUCache(2);
+lFUCache.put(1, 1);
+lFUCache.put(2, 2);
+lFUCache.get(1);      // return 1
+lFUCache.put(3, 3);   // evicts key 2
+lFUCache.get(2);      // return -1 (not found)
+lFUCache.get(3);      // return 3
+lFUCache.put(4, 4);   // evicts key 1.
+lFUCache.get(1);      // return -1 (not found)
+lFUCache.get(3);      // return 3
+lFUCache.get(4);      // return 4
+ 	</pre>
+    <p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+  
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+ class LFUCache {
+
+    class Node{
+        int key;
+        int value;
+        int freq;
+        Node prev;
+        Node next;
+        Node(){
+            
+        }
+        Node(int key, int value){
+            this.key=key;
+            this.value=value;
+            this.freq=1;
+        }
+    }
+    
+    Node head;
+    Node tail;
+    Map&lt;Integer, Node&gt; map;
+    int maxCapacity;
+    int currCapacity;
+    
+    public LFUCache(int capacity) {
+        maxCapacity=capacity;
+        map=new HashMap();
+        head=new Node(-1,-1);
+        tail=new Node(-1,-1);
+        
+        head.next=tail;
+        head.prev=null;
+        
+        tail.prev=head;
+        tail.next=null;
+    }
+    
+    public int get(int key) {
+        if(this.maxCapacity==0)
+            return -1;
+        if(!map.containsKey(key))
+            return -1;
+        Node newRecentNode=map.get(key);
+        newRecentNode.freq+=1;
+        if(newRecentNode.prev==head)
+            return newRecentNode.value;
+        detachNode(newRecentNode);
+        insertNode(newRecentNode);
+        return newRecentNode.value;
+    }
+    
+    public void put(int key, int value) {
+        if(this.maxCapacity==0)
+            return;
+        if(!map.containsKey(key)){
+            Node newPair=new Node(key,value);
+            map.put(key,newPair);
+            currCapacity++;
+            
+            if(currCapacity>maxCapacity){
+                Node penultimate = tail.prev;
+                detachNode(penultimate);
+                currCapacity--;
+                map.remove(penultimate.key);
+            }
+            newInsertNode(newPair);
+        }
+        else{
+            Node updatedNode=map.get(key);
+            updatedNode.value=value;
+            updatedNode.freq+=1;
+            if(updatedNode.prev!=head){
+                detachNode(updatedNode);
+                insertNode(updatedNode);
+            }
+        }
+    }
+    void detachNode(Node node){
+        Node leftOfNodeAccessed = node.prev;
+        Node rightOfNodeAccessed = node.next;
+        rightOfNodeAccessed.prev=leftOfNodeAccessed;
+        leftOfNodeAccessed.next=rightOfNodeAccessed;
+    }
+    
+    void insertNode(Node node){
+        Node temp=node;
+        int f=node.freq;
+        while(temp.prev!=head && temp.prev.freq<=f){
+            temp=temp.prev;
+        }
+        if(temp==node) {
+        	node.prev.next=node;
+        	node.next.prev=node;
+        	return;
+        }
+        temp.prev.next=node;
+        node.prev=temp.prev;
+        temp.prev=node;
+        node.next=temp;
+        
+    }
+    void newInsertNode(Node node){
+        Node temp=tail;
+        while(temp.prev!=head && temp.prev.freq==1){
+            temp=temp.prev;
+        }
+        temp.prev.next=node;
+        node.prev=temp.prev;
+        temp.prev=node;
+        node.next=temp;
+        
+    }
+    
+}
+
+<a>/**
+ * Your LFUCache object will be instantiated and called as such:
+ * LFUCache obj = new LFUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */</a>
+           
+    </pre>
+</div>
+</div>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+        <h3>About<span>CodersCheckList</span></h3>
+
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          |
+          <a href="#hetop">Back to Top</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Interview Preparation Platform</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Campus -1, 19th KM Stone, NH 24,</span>
+            Ghaziabad, Uttar Pradesh 201009</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 123456789</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ujjwal.19b101048@abes.ac.in">ujjwal.19b101048@abes.ac.in</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:vartika.19b101085@abes.ac.in">vartika.19b101085@abes.ac.in</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Website</span>
+          An Interview Preparation Platform</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+ </body>
+</html>

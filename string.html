@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>String Questions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+	<header>
+	<h1 id="stop" style="color: red; font-family: algerian; font-size: 250%; text-align: center;">CodersCheckList<img class="image" src="project_icon.jpg" style="float:right;width:80px;margin-right:20px;height:80px;"></h1>
+	</header>
+	<br>
+	
+	<!--top navigation bar container-->
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="array.html">Arrays</a>
+  <a href="string.html" class="active">Strings</a>
+  <a href="linkedlist.html">Linked-List</a>
+   <a href="stack.html">Stack</a>
+  <a href="queue.html">Queue</a>
+  <a href="heap.html">PriorityQueue</a>
+  <a href="set.html">Set And Map</a>
+  <a href="binarytree.html">Binary Tree</a>
+   <a href="binarysearchtree.html">Binary Search Tree</a>
+  <a href="graph.html">Graph</a>
+  <a href="trie.html">Trie</a>
+  <a href="segmenttree.html">Segment Tree</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!--string content start-->
+<!-- side bar conatiner-->
+<h2 style="text-decoration-line: underline;">STRINGS</h2>
+<div class="leftsidebar">
+	<ul class="leftlist" style="margin-right: 5px; overflow: auto;">
+<li class="listheading">ARRAYS</li>
+		<li><a class="hyperlinks1" href="array.html#A1">Kadane's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="array.html#A2">N/2 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A3">N/3 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A4">Merge Overlapping Intervals</a></li>
+		<li><a class="hyperlinks1" href="array.html#A5">Rotate Matrix</a></li>
+		<li><a class="hyperlinks1" href="array.html#A6"> Buy/Sell Stocks-I,II,III</a></li>
+		<li class="listheading">STRING</li>
+		<li><a class="hyperlinks1" href="string.html#S1">Pattern Matching Algorithms(KMP+Rabin Karp)</a></li>
+		<li><a class="hyperlinks1" href="string.html#S2">Using String Builder Class</a></li>
+		<li><a class="hyperlinks1" href="string.html#S3">String Compression Algorithm</a></li>
+		<li class="listheading">LINKEDLIST</li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L1">Implementation of LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L2">Detect cycle in a LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L3">Reverse a LinkedList</a></li>
+		<li class="listheading">STACK</li>
+		<li><a class="hyperlinks1" href="stack.html#ST1">Implementation of Stack</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST2">Balance paranthesis</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST3">Trapping rain water</a></li>
+		<li class="listheading">QUEUE</li>
+		<li><a class="hyperlinks1" href="queue.html#Q1">Implementation of Queue + Deque</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q2">Sliding window maximum</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q3">Implement BFS</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q4">Implement Level Order in Binary Tree</a></li>
+		<li class="listheading">PRIORITY QUEUE</li>
+		<li><a class="hyperlinks1" href="heap.html#H1">Implementation of Heap Data structure</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H2">Connect n ropes with min cost</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H3">Median of running stream</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H4">LRU cache</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H5">LFU cache</a></li>
+		<li class="listheading">SET &amp; MAP</li>
+		<li><a class="hyperlinks1" href="set.html#M1">Internal working of HashMap</a></li>
+		<li><a class="hyperlinks1" href="set.html#M2">4-sum</a></li>
+		<li><a class="hyperlinks1" href="set.html#M3">Longest substring without repeat</a></li>
+		<li class="listheading">BINARY TREE</li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT1">Implementation:insert,delete,traverse</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT2">Invert a binary tree</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT3">Lowest common ancestor</a></li>
+		<li class="listheading">BINARY SEARCH TREE</li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST1">Implementation</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST2">Check if a tree is BST or not</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST3">AVL tree and rotation</a></li>
+		<li class="listheading">GRAPH</li>
+		<li><a class="hyperlinks1" href="graph.html#G1">Implementation, BFS and DFS traversals</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G2">Topological Sorting</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G3">Bellman ford Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G4">Dijkstra's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G5">Prim's Algorithm</a></li>
+		<li class="listheading">TRIE</li>
+		<li><a class="hyperlinks1" href="trie.html#TR1">Implementation-insert and search</a></li>
+		<li class="listheading">SEGMENT TREES</li>
+		<li><a class="hyperlinks1" href="segmenttree.html#TS1">Implementation</a></li>
+	</ul>
+</div>
+<!--programs of string start-->
+<div class="content1">
+	<div style="margin-left: 19%;">
+	<h3 id="S1">Pattern Matching Algorithms (KMP + Rabin Karp)</h3>
+	<p style="color: white;font-size: 22px;">Given a text txt[0..n-1] and a pattern pat[0..m-1], write a function search(char pat[], char txt[]) that prints all occurrences of pat[] in txt[]. You may assume that n > m.</p>
+	<pre class="content2">Input:  txt[] = "THIS IS A TEST TEXT"
+        pat[] = "TEST"
+Output: Pattern found at index 10
+
+Input:  txt[] =  "AABAACAADAABAABA"
+        pat[] =  "AABA"
+Output: Pattern found at index 0
+        Pattern found at index 9
+        Pattern found at index 12</pre>
+	<p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+	<section style="color: white; font-size: 20px;">The idea of KMP algorithm is to save the progress and eliminate the reverting back in the main String(S), it is achieved by pre-processing the given pattern(p).
+The algorithm is similar to the naive approach, we start searching for pattern_p in String S, character by character, and if we encounter a mismatch, then instead of reverting back in the main string S, we revert back our position in pattern p, to a point, where the suffix is also a prefix in the matched part of the pattern.</section>
+<p style="font-size: 26px; color: gold;">ALGORITHM:</p>
+<section style="color: white;font-size: 20px;">
+	1) KMP algorithm preprocesses pat[] and constructs an auxiliary lps[] of size m (same as size of pattern) which is used to skip characters while matching.<br>
+2)  Name lps indicates longest proper prefix which is also suffix.. A proper prefix is prefix with whole string not allowed. For example, prefixes of “ABC” are “”, “A”, “AB” and “ABC”. Proper prefixes are “”, “A” and “AB”. Suffixes of the string are “”, “C”, “BC” and “ABC”.<br>
+3)  We search for lps in sub-patterns. More clearly we focus on sub-strings of patterns that are either prefix and suffix.
+For each sub-pattern pat[0..i] where i = 0 to m-1, lps[i] stores length of the maximum matching proper prefix which is also a suffix of the sub-pattern pat[0..i].<br>
+<p style="font-size: 22px; color:gold; text-align: center;">Searching Algorithm</p>
+ We use a value from lps[] to decide the next characters to be matched. The idea is to not match a character that we know will anyway match.<br><br>
+
+How to use lps[] to decide next positions (or to know a number of characters to be skipped)?<br>
+
+1) We start comparison of pat[j] with j = 0 with characters of current window of text.<br>
+2) We keep matching characters txt[i] and pat[j] and keep incrementing i and j while pat[j] and txt[i] keep matching.<br>
+When we see a mismatch<br>
+3)  We know that characters pat[0..j-1] match with txt[i-j…i-1] (Note that j starts with 0 and increment it only when there is a match).<br>
+4)  We also know (from above definition) that lps[j-1] is count of characters of pat[0…j-1] that are both proper prefix and suffix.<br>
+5)  From above two points, we can conclude that we do not need to match these lps[j-1] characters with txt[i-j…i-1] because we know that these characters will anyway match. Let us consider above example to understand this.<br>
+</section>
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+<p style="color: green">// JAVA program for implementation of KMP pattern 
+// searching algorithm </p>
+  class KMP_String_Matching { 
+    void KMPSearch(String pat, String txt) 
+    { 
+        int M = pat.length(); 
+        int N = txt.length(); 
+        <p style="color: green;"> // create lps[] that will hold the longest 
+        // prefix suffix values for pattern </p>
+        int lps[] = new int[M]; 
+        int j = 0; <p style="color: green;">// index for pat[] 
+        // Preprocess the pattern (calculate lps[] array) </p>
+        computeLPSArray(pat, M, lps); 
+           int i = 0; <p style="color: green;">// index for txt[] </p>
+        while (i < N) { 
+            if (pat.charAt(j) == txt.charAt(i)) { 
+                j++; 
+                i++; 
+            } 
+            if (j == M) { 
+                System.out.println("Found pattern " + "at index " + (i - j)); 
+                j = lps[j - 1]; 
+            } 
+        <p style="color: green;">// mismatch after j matches </p>
+            else if (i < N && pat.charAt(j) != txt.charAt(i)) { 
+               <p style="color: green;"> // Do not match lps[0..lps[j-1]] characters, they will match anyway</p> 
+                if (j != 0) 
+                    j = lps[j - 1]; 
+                else
+                    i = i + 1; 
+            } 
+        } 
+    } 
+   void computeLPSArray(String pat, int M, int lps[]) 
+    { 
+        <p style="color: green;">// length of the previous longest prefix suffix </p>
+        int len = 0; 
+        int i = 1; 
+        lps[0] = 0; <p style="color: green;">// lps[0] is always 0 
+         // the loop calculates lps[i] for i = 1 to M-1 </p>
+        while (i < M) { 
+            if (pat.charAt(i) == pat.charAt(len)) { 
+                len++; 
+                lps[i] = len; 
+                i++; 
+            } 
+            else <p style="color: green;">// (pat[i] != pat[len])</p> 
+            { 
+               <p style="color: green;"> // This is tricky. Consider the example. 
+                // AAACAAAA and i = 7. The idea is similar to search step.</p> 
+                if (len != 0) { 
+                    len = lps[len - 1]; 
+           <p style="color: green;"> // Also, note that we do not increment i here </p>
+                } 
+                else <p style="color: green;">// if (len == 0)</p> 
+                { 
+                    lps[i] = len; 
+                    i++; 
+                } 
+            } 
+        } 
+    } 
+    <p style="color: green;">// Driver program to test above function </p>
+    public static void main(String args[]) 
+    { 
+        String txt = "ABABDABACDABABCABAB"; 
+        String pat = "ABABCABAB"; 
+        new KMP_String_Matching().KMPSearch(pat, txt); 
+    } 
+} 
+</pre>
+</div>
+<!-- rabin karp starts-->
+<div style="margin-left: 19%">
+<h3>Rabin Karp</h3>
+<p style="font-size: 26px; color: gold;">EXAMPLE:</p>
+<img src="rabinkarp.png" style="width: 60%; height: 300px;border:3px solid red;">
+<p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+<section style="color: white;font-size: 20px;">
+Rabin Karp algorithm matches the hash value of the pattern with the hash value of current substring of text, and if the hash values match then only it starts matching individual characters. So Rabin Karp algorithm needs to calculate hash values for following strings.<br>
+1) Pattern itself. <br>
+2) All the substrings of the text of length m. 
+<br>
+Since we need to efficiently calculate hash values for all the substrings of size m of text, we must have a hash function which has the following property. 
+Hash at the next shift must be efficiently computable from the current hash value and next character in text or we can say hash(txt[s+1 .. s+m]) must be efficiently computable from hash(txt[s .. s+m-1]) and txt[s+m] i.e., hash(txt[s+1 .. s+m])= rehash(txt[s+m], hash(txt[s .. s+m-1])) and rehash must be O(1) operation.
+The hash function suggested by Rabin and Karp calculates an integer value. The integer value for a string is the numeric value of a string. <br>
+The numeric value is calculated using modular arithmetic to make sure that the hash values can be stored in an integer variable (can fit in memory words). To do rehashing, we need to take off the most significant digit and add the new least significant digit for in hash value. Rehashing is done using the following formula. 
+</section>
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	<p style="color: green;">// Following program is a Java implementation  
+// of Rabin Karp Algorithm given in the CLRS book</p> 
+  public class Main  
+{ 
+    <p style="color: green;">// d is the number of characters in the input alphabet</p>
+    public final static int d = 256; 
+      <p style="color: green;">/* pat -> pattern 
+        txt -> text 
+        q -> A prime number */</p>
+    static void search(String pat, String txt, int q) 
+    { 
+        int M = pat.length(); 
+        int N = txt.length(); 
+        int i, j; 
+        int p = 0; <p style="color: green;">// hash value for pattern</p> 
+        int t = 0; <p style="color: green;">// hash value for txt</p> 
+        int h = 1; 
+        <p style="color: green;">// The value of h would be "pow(d, M-1)%q"</p> 
+        for (i = 0; i < M-1; i++) 
+            h = (h*d)%q; 
+         <p style="color: green;">// Calculate the hash value of pattern and first 
+        // window of text </p>
+        for (i = 0; i < M; i++) 
+        { 
+            p = (d*p + pat.charAt(i))%q; 
+            t = (d*t + txt.charAt(i))%q; 
+        } 
+         <p style="color: green;">// Slide the pattern over text one by one </p>
+        for (i = 0; i <= N - M; i++) 
+        { 
+            <p style="color: green;">// Check the hash values of current window of text 
+            // and pattern. If the hash values match then only 
+            // check for characters on by one </p>
+            if ( p == t ) 
+            { 
+                <p style="color: green;">/* Check for characters one by one */</p>
+                for (j = 0; j < M; j++) 
+                { 
+                    if (txt.charAt(i+j) != pat.charAt(j)) 
+                        break; 
+                } 
+            <p style="color: green;"> // if p == t and pat[0...M-1] = txt[i, i+1, ...i+M-1]</p> 
+                if (j == M) 
+                    System.out.println("Pattern found at index " + i); 
+            } 
+            <p style="color: green;">// Calculate hash value for next window of text: Remove 
+            // leading digit, add trailing digit </p>
+            if ( i < N-M ) 
+            { 
+                t = (d*(t - txt.charAt(i)*h) + txt.charAt(i+M))%q; 
+               <p style="color: green;">// We might get negative value of t, converting it 
+                // to positive</p> 
+                if (t < 0) 
+                t = (t + q); 
+            } 
+        } 
+    } 
+      <p style="color: green;"> /* Driver Code */</p>
+    public static void main(String[] args) 
+    { 
+        String txt = "GEEKS FOR GEEKS"; 
+        String pat = "GEEK"; 
+          <p style="color: green;">// A prime number </p>
+        int q = 101;  
+        <p style="color: green;">// Function Call</p> 
+        search(pat, txt, q); 
+    } 
+}
+</pre>
+<h3 id="S2">Using StringBuilder class</h3>
+<p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+<section style="color: white;font-size: 20px;">
+	The StringBuilder in Java represents a mutable sequence of characters. Since the String Class in Java creates an immutable sequence of characters, the StringBuilder class provides an alternative to String Class, as it creates a mutable sequence of characters.
+	<p style="font-size: 22px; color:gold; text-align: center;">Syntax</p>
+	<pre class="content2">public final class StringBuilder
+    extends Object
+    implements Serializable, CharSequence</pre>
+    <p style="font-size: 22px; color:gold; text-align: center;">Constructors in Java StringBuilder:</p>
+    <p style="color: white;font-size: 20px; tex">
+    	1) <strong style="text-decoration-line: underline;"> StringBuilder():</strong> Constructs a string builder with no characters in it and an initial capacity of 16 characters.<br>
+2) <strong style="text-decoration-line: underline;"> StringBuilder(int capacity):</strong> Constructs a string builder with no characters in it and an initial capacity specified by the capacity argument.<br>
+3) <strong style="text-decoration-line: underline;">StringBuilder(CharSequence seq):</strong> Constructs a string builder that contains the same characters as the specified CharSequence.<br>
+4) <strong style="text-decoration-line: underline;">StringBuilder(String str):</strong>Constructs a string builder initialized to the contents of the specified string.
+    </p>
+</section>
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	<p style="color: green;">// Java code to illustrate StringBuilder</p> 
+import java.util.*; 
+import java.util.concurrent.LinkedBlockingQueue; 
+  public class GFG1 { 
+    public static void main(String[] argv) 
+        throws Exception 
+    { 
+        <p style="color: green;">// create a StringBuilder object 
+        // usind StringBuilder() constructor</p> 
+        StringBuilder str 
+            = new StringBuilder(); 
+        str.append("GFG"); 
+        <p style="color: green;"> // print string </p>
+        System.out.println("String = "
+                           + str.toString()); 
+        <p style="color: green;">// create a StringBuilder object 
+        // usind StringBuilder(CharSequence) constructor</p> 
+        StringBuilder str1 
+            = new StringBuilder("AAAABBBCCCC"); 
+         <p style="color: green;">// print string </p>
+        System.out.println("String1 = "
+                           + str1.toString()); 
+        <p style="color: green;">// create a StringBuilder object 
+        // usind StringBuilder(capacity) constructor </p>
+        StringBuilder str2 
+            = new StringBuilder(10); 
+       <p style="color: green;"> // print string </p>
+        System.out.println("String2 capacity = "
+                           + str2.capacity()); 
+     <p style="color: green;"> // create a StringBuilder object 
+        // usind StringBuilder(String) constructor</p> 
+        StringBuilder str3 
+            = new StringBuilder(str1); 
+       <p style="color: green;">// print string</p> 
+        System.out.println("String3 = "
+                           + str3.toString()); 
+    } 
+} 
+
+</pre>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+<p style="color: green;"> // Java code to illustrate 
+// methods of StringBuilder</p> 
+  import java.util.*; 
+import java.util.concurrent.LinkedBlockingQueue; 
+  public class GFG1 { 
+    public static void main(String[] argv) 
+        throws Exception 
+    { 
+       <p style="color: green;"> // create a StringBuilder object 
+        // with a String pass as parameter </p>
+        StringBuilder str 
+            = new StringBuilder("AAAABBBCCCC"); 
+         <p style="color: green;"> // print string</p> 
+        System.out.println("String = "
+                           + str.toString()); 
+          <p style="color: green;"> // reverse the string </p>
+        StringBuilder reverseStr = str.reverse(); 
+         <p style="color: green;"> // print string </p>
+        System.out.println("Reverse String = "
+                           + reverseStr.toString()); 
+      <p style="color: green;"> // Append ', '(44) to the String </p>
+        str.appendCodePoint(44); 
+      <p style="color: green;"> // Print the modified String </p>
+        System.out.println("Modified StringBuilder = "+ str); 
+         <p style="color: green;"> // get capacity </p>
+        int capacity = str.capacity(); 
+       <p style="color: green;"> // print the result </p>
+        System.out.println("StringBuilder = " + str); 
+        System.out.println("Capacity of StringBuilder = "
+                           + capacity); 
+    } 
+} 
+</pre>
+<h3 id="S3">String Compression Algorithm</h3>
+<p style="color: white;font-size: 22px;">Given an array of characters chars, compress it using the following algorithm:<br>
+
+Begin with an empty string s. For each group of consecutive repeating characters in chars:<br><br>
+
+<strong>1)</strong>If the group's length is 1, append the character to s.<br>
+<strong>2)</strong>Otherwise, append the character followed by the group's length.<br><br>
+The compressed string s should not be returned separately, but instead be stored in the input character array chars. Note that group lengths that are 10 or longer will be split into multiple characters in chars.
+
+After you are done modifying the input array, return the new length of the array.</p>
+<pre class="content2">Input: chars = ["a","a","b","b","c","c","c"]
+Output: Return 6, and the first 6 characters of the input array should be: ["a","2","b","2","c","3"]
+Explanation: The groups are "aa", "bb", and "ccc". This compresses to "a2b2c3".
+Input: chars = ["a","a","a","b","b","a","a"]
+Output: Return 6, and the first 6 characters of the input array should be: ["a","3","b","2","a","2"].
+Explanation: The groups are "aaa", "bb", and "aa". This compresses to "a3b2a2". Note that each group is independent even if two groups have the same character.
+</pre>
+<p style="font-size: 26px; color: gold;">ALGORITHM:</p>
+<section style="color: white;font-size: 20px;">
+	Let's maintain anchor, the start position of the contiguous group of characters we are currently reading.<br>
+
+Now, let's read from left to right. We know that we must be at the end of the block when we are at the last character, or when the next character is different from the current character.<br>
+
+When we are at the end of a group, we will write the result of that group down using our write head. chars[anchor] will be the correct character, and the length (if greater than 1) will be read - anchor + 1. We will write the digits of that number to the array.
+</section>
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	class Solution {
+    public int compress(char[] chars) {
+        int anchor = 0, write = 0;
+        for (int read = 0; read < chars.length; read++) {
+            if (read + 1 == chars.length || chars[read + 1] != chars[read]) {
+                chars[write++] = chars[anchor];
+                if (read > anchor) {
+                    for (char c: ("" + (read - anchor + 1)).toCharArray()) {
+                        chars[write++] = c;
+                    }
+                }
+                anchor = read + 1;
+            }
+        }
+        return write;
+    }
+
+</pre>
+</div>
+</div>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+        <h3>About<span>CodersCheckList</span></h3>
+
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          |
+          <a href="#stop">Back to Top</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Interview Preparation Platform</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Campus -1, 19th KM Stone, NH 24,</span>
+            Ghaziabad, Uttar Pradesh 201009</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 123456789</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ujjwal.19b101048@abes.ac.in">ujjwal.19b101048@abes.ac.in</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:vartika.19b101085@abes.ac.in">vartika.19b101085@abes.ac.in</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Website</span>
+          An Interview Preparation Platform</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
+
+

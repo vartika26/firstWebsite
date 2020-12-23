@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binary Tree</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+     <header>
+  <h1 id="btop" style="color: red; font-family: algerian; font-size: 250%; text-align: center;">CodersCheckList<img class="image" src="project_icon.jpg" style="float:right;width:80px;margin-right:20px;height:80px;"></h1>
+  </header>
+  <br>
+  <!-- top navigation bar container-->
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="array.html">Arrays</a>
+  <a href="string.html">Strings</a>
+  <a href="linkedlist.html">Linked-List</a>
+   <a href="stack.html">Stack</a>
+  <a href="queue.html">Queue</a>
+  <a href="heap.html">PriorityQueue</a>
+  <a href="set.html">Set And Map</a>
+  <a href="binarytree.html" class="active">Binary Tree</a>
+   <a href="binarysearchtree.html">Binary Search Tree</a>
+  <a href="graph.html">Graph</a>
+  <a href="trie.html">Trie</a>
+  <a href="segmenttree.html">Segment Tree</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!-- top navigation bar conatiner closed-->
+<!--sidebar conatiner start here--> 
+<h2>Binary Tree</h2>
+<div class="leftsidebar">
+  <ul class="leftlist" style="margin-right: 5px; overflow: auto;">
+    <li class="listheading">ARRAYS</li>
+		<li><a class="hyperlinks1" href="array.html#A1">Kadane's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="array.html#A2">N/2 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A3">N/3 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A4">Merge Overlapping Intervals</a></li>
+		<li><a class="hyperlinks1" href="array.html#A5">Rotate Matrix</a></li>
+		<li><a class="hyperlinks1" href="array.html#A6"> Buy/Sell Stocks-I,II,III</a></li>
+		<li class="listheading">STRING</li>
+		<li><a class="hyperlinks1" href="string.html#S1">Pattern Matching Algorithms(KMP+Rabin Karp)</a></li>
+		<li><a class="hyperlinks1" href="string.html#S2">Using String Builder Class</a></li>
+		<li><a class="hyperlinks1" href="string.html#S3">String Compression Algorithm</a></li>
+		<li class="listheading">LINKEDLIST</li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L1">Implementation of LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L2">Detect cycle in a LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L3">Reverse a LinkedList</a></li>
+		<li class="listheading">STACK</li>
+		<li><a class="hyperlinks1" href="stack.html#ST1">Implementation of Stack</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST2">Balance paranthesis</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST3">Trapping rain water</a></li>
+		<li class="listheading">QUEUE</li>
+		<li><a class="hyperlinks1" href="queue.html#Q1">Implementation of Queue + Deque</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q2">Sliding window maximum</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q3">Implement BFS</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q4">Implement Level Order in Binary Tree</a></li>
+		<li class="listheading">PRIORITY QUEUE</li>
+		<li><a class="hyperlinks1" href="heap.html#H1">Implementation of Heap Data structure</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H2">Connect n ropes with min cost</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H3">Median of running stream</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H4">LRU cache</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H5">LFU cache</a></li>
+		<li class="listheading">SET &amp; MAP</li>
+		<li><a class="hyperlinks1" href="set.html#M1">Internal working of HashMap</a></li>
+		<li><a class="hyperlinks1" href="set.html#M2">4-sum</a></li>
+		<li><a class="hyperlinks1" href="set.html#M3">Longest substring without repeat</a></li>
+		<li class="listheading">BINARY TREE</li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT1">Implementation:insert,delete,traverse</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT2">Invert a binary tree</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT3">Lowest common ancestor</a></li>
+		<li class="listheading">BINARY SEARCH TREE</li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST1">Implementation</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST2">Check if a tree is BST or not</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST3">AVL tree and rotation</a></li>
+		<li class="listheading">GRAPH</li>
+		<li><a class="hyperlinks1" href="graph.html#G1">Implementation, BFS and DFS traversals</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G2">Topological Sorting</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G3">Bellman ford Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G4">Dijkstra's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G5">Prim's Algorithm</a></li>
+		<li class="listheading">TRIE</li>
+		<li><a class="hyperlinks1" href="trie.html#TR1">Implementation-insert and search</a></li>
+		<li class="listheading">SEGMENT TREES</li>
+		<li><a class="hyperlinks1" href="segmenttree.html#TS1">Implementation</a></li>
+  </ul>
+</div>
+<!-- sidebar closed-->
+<!--programs of queue start here--> 
+ <div class="content1">
+  <div style="margin-left: 19%;">
+   <h3 id="BT1">Implementation - Insert , Delete and Traverse</h3>
+   <p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+      <p style="color: white; font-size: 20px;"> 
+   A binary tree is a tree where each node can have at most two children. So a node in binary tree can have only a left child, or a right child, or both or it can have no children which makes it a leaf node.<br>
+
+Binary tree data structure gives the best of both linked list and an ordered array. You can insert and delete nodes fast as in linked list and search a node fast as in an ordered array.</p>
+<p style="font-size: 22px; color:gold; text-align: center;">Insertion</p>
+     <p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	public void insert(int i){
+  Node newNode = new Node(i);
+  if(root == null){
+    root = newNode;
+  }else{
+    Node current = root;
+    Node parent;
+    while(true){
+      parent = current;
+      if(i < current.value){
+        current = current.left;
+        if(current == null){
+          parent.left = newNode;
+          return;
+        }
+      }else{
+        current = current.right;
+        if(current == null){
+          parent.right = newNode;
+          return;
+        }
+      }
+    }
+  }
+}
+</pre>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	void deletion(Node*& root, int item)  
+{  
+    Node* parent = NULL;  
+    Node* cur = root;  
+  
+    search(cur, item, parent);  
+    if (cur == NULL)  
+        return;  
+  
+    if (cur->left == NULL && cur->right == NULL)  
+    {  
+        if (cur != root)  
+        {  
+            if (parent->left == cur)  
+                parent->left = NULL;  
+            else  
+                parent->right = NULL;  
+        }  
+        else  
+            root = NULL;  
+  
+        free(cur);       
+    }  
+    else if (cur->left && cur->right)  
+    {  
+        Node* succ  = findMinimum(cur- >right);  
+  
+        int val = succ->data;  
+  
+        deletion(root, succ->data);  
+  
+        cur->data = val;  
+    }  
+  
+    else  
+    {  
+        Node* child = (cur->left)? Cur- >left: cur->right;  
+  
+        if (cur != root)  
+        {  
+            if (cur == parent->left)  
+                parent->left = child;  
+            else  
+                parent->right = child;  
+        }  
+  
+        else  
+            root = child;  
+        free(cur);  
+    }  
+}  
+  
+Node* findMinimum(Node* cur)  
+{  
+    while(cur->left != NULL) {  
+        cur = cur->left;  
+    }  
+    return cur;  
+}  
+</pre>
+<p style="font-size: 22px; color:gold; text-align: center;">Traversal</p>
+<p style="color: white; font-size: 20px;"> 
+When you traverse a tree you visit each node in a specified order. The order that can be used for traversal are-<br>
+
+<strong>(1)</strong>Inorder traversal<br>
+<strong>(2)</strong>Preorder traversal<br>
+<strong>(3)</strong>Postorder traversal
+</p>
+<p style="font-size: 22px; color:gold; text-align: center;" id="BT2">Inorder Traversal</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+<a>// For traversing in order</a>
+public void inOrder(Node node){
+  if(node != null){
+    inOrder(node.left);
+    node.displayData();
+    inOrder(node.right);
+  }
+}
+</pre>
+<p style="font-size: 22px; color:gold; text-align: center;">Preorder Traversal</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	<a>// Preorder traversal</a>
+public void preOrder(Node node){
+  if(node != null){
+    node.displayData();
+    preOrder(node.left);        
+    preOrder(node.right);
+  }
+}
+</pre>
+<p style="font-size: 22px; color:gold; text-align: center;">Preorder Traversal</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+
+	<a>// Postorder traversal</a>
+public void postOrder(Node node){
+  if(node != null){
+    postOrder(node.left);
+    postOrder(node.right);
+    node.displayData();       
+  }
+}
+</pre>
+   <h3 id="BT3">Invert a Binary Tree</h3>
+ <p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	public TreeNode invertTree(TreeNode root) {
+    if (root == null) return null;
+    Queue&lt;TreeNode&gt; queue = new LinkedList&lt;TreeNode&gt;();
+    queue.add(root);
+    while (!queue.isEmpty()) {
+        TreeNode current = queue.poll();
+        TreeNode temp = current.left;
+        current.left = current.right;
+        current.right = temp;
+        if (current.left != null) queue.add(current.left);
+        if (current.right != null) queue.add(current.right);
+    }
+    return root;
+}
+</pre>
+   <h3 id="BT4">Lowest Common Ancestor</h3>
+Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+ <img src="binarytree1.png" width="50%" height="300px" style="border:3px solid red;">
+ <pre class="content2">
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
+Output: 3
+Explanation: The LCA of nodes 5 and 1 is 3.
+</pre>
+<p style="font-size: 26px; color: gold;">ALGORITHM:</p>
+ 	<p style="color: white; font-size: 20px;"> 
+   <strong>(1)</strong> Start traversing the tree from the root node.<br>
+<strong>(2)</strong>If the current node itself is one of p or q, we would mark a variable mid as True and continue the search for the other node in the left and right branches.<br>
+<strong>(3)</strong>If either of the left or the right branch returns True, this means one of the two nodes was found below.<br>
+<strong>(4)</strong>If at any point in the traversal, any two of the three flags left, right or mid become True, this means we have found the lowest common ancestor for the nodes p and q.
+ 	</p>
+ 	<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	class Solution {
+
+    private TreeNode ans;
+
+    public Solution() {
+        <a>// Variable to store LCA node.</a>
+        this.ans = null;
+    }
+
+    private boolean recurseTree(TreeNode currentNode, TreeNode p, TreeNode q) {
+
+        <a>// If reached the end of a branch, return false.</a>
+        if (currentNode == null) {
+            return false;
+        }
+
+        <a>// Left Recursion. If left recursion returns true, set left = 1 else 0</a>
+        int left = this.recurseTree(currentNode.left, p, q) ? 1 : 0;
+        <a> // Right Recursion</a>
+        int right = this.recurseTree(currentNode.right, p, q) ? 1 : 0;
+
+        <a>// If the current node is one of p or q</a>
+        int mid = (currentNode == p || currentNode == q) ? 1 : 0;
+
+
+        <a>// If any two of the flags left, right or mid become True</a>
+        if (mid + left + right >= 2) {
+            this.ans = currentNode;
+        }
+
+        <a>// Return true if any one of the three bool values is True.</a>
+        return (mid + left + right > 0);
+    }
+
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        <a>// Traverse the tree</a>
+        this.recurseTree(root, p, q);
+        return this.ans;
+    }
+}
+</pre>
+</div>
+</div>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+        <h3>About<span>CodersCheckList</span></h3>
+
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          |
+          <a href="#btop">Back to Top</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Interview Preparation Platform</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Campus -1, 19th KM Stone, NH 24,</span>
+            Ghaziabad, Uttar Pradesh 201009</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 123456789</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ujjwal.19b101048@abes.ac.in">ujjwal.19b101048@abes.ac.in</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:vartika.19b101085@abes.ac.in">vartika.19b101085@abes.ac.in</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Website</span>
+          An Interview Preparation Platform</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

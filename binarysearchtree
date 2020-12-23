@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binary Search Tree</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		body{
+    background-color: black;
+    }
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: red;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:nth-child(10)), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+@media screen and (max-width:800px){
+	.image{
+		display: none;
+	}
+}
+h2{
+  text-align: center;
+  color: red;
+   font-family: algerian; 
+   font-size: 250%;
+   text-decoration-line: underline;
+}
+ h3 {
+  color: gold;
+  font-size: 28px;
+  font-family: arial;
+  text-align: center;
+  text-decoration-line: underline;
+}
+.content1{
+  border: 2px solid black;
+  margin: 20px;
+  padding: 10px;
+}
+.code{
+  float: none;
+}
+.leftlist{
+  list-style-type: none;
+   display: block;
+    font-size: 15px;
+    line-height: 1.5;
+    border-left: 3px solid var(--color-gfg);
+    margin-top: 5px;
+    background-color: #fff;
+    font-family: var(--font-sofia);
+    border :4px solid red;
+   
+}
+
+
+.leftsidebar{
+  width: 18%;
+    float: left;
+    margin: 28px;
+    position: relative;
+    margin-top: 25px;
+   }
+ .leftlist li{
+      display: list-item;
+    text-align: -webkit-match-parent;
+    padding: 10px;
+
+}
+.listheading{
+  color: red;
+  font-family: arial;
+}
+.content2{
+  background-color: #e0e0e0;
+    border-radius: 10px;
+    color: rgba(0,0,0,.9);
+    font-family: Consolas,monospace;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding: 10px;
+}
+.hyperlinks1{
+	color: black;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+     <header>
+  <h1 id="bstop" style="color: red; font-family: algerian; font-size: 250%; text-align: center;">CodersCheckList<img class="image" src="project_icon.jpg" style="float:right;width:80px;margin-right:20px;height:80px;"></h1>
+  </header>
+  <br>
+  <!-- top navigation bar container-->
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="array.html">Arrays</a>
+  <a href="string.html">Strings</a>
+  <a href="linkedlist.html">Linked-List</a>
+   <a href="stack.html">Stack</a>
+  <a href="queue.html">Queue</a>
+  <a href="heap.html">PriorityQueue</a>
+  <a href="set.html">Set And Map</a>
+  <a href="binarytree.html">Binary Tree</a>
+   <a href="binarysearchtree.html" class="active">Binary Search Tree</a>
+  <a href="graph.html">Graph</a>
+  <a href="trie.html">Trie</a>
+  <a href="segmenttree.html">Segment Tree</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!-- top navigation bar conatiner closed-->
+<!--sidebar conatiner start here--> 
+<h2>Binary Search Tree</h2>
+<div class="leftsidebar">
+  <ul class="leftlist" style="margin-right: 5px; overflow: auto;">
+    <li class="listheading">ARRAYS</li>
+		<li><a class="hyperlinks1" href="array.html#A1">Kadane's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="array.html#A2">N/2 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A3">N/3 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A4">Merge Overlapping Intervals</a></li>
+		<li><a class="hyperlinks1" href="array.html#A5">Rotate Matrix</a></li>
+		<li><a class="hyperlinks1" href="array.html#A6"> Buy/Sell Stocks-I,II,III</a></li>
+		<li class="listheading">STRING</li>
+		<li><a class="hyperlinks1" href="string.html#S1">Pattern Matching Algorithms(KMP+Rabin Karp)</a></li>
+		<li><a class="hyperlinks1" href="string.html#S2">Using String Builder Class</a></li>
+		<li><a class="hyperlinks1" href="string.html#S3">String Compression Algorithm</a></li>
+		<li class="listheading">LINKEDLIST</li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L1">Implementation of LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L2">Detect cycle in a LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L3">Reverse a LinkedList</a></li>
+		<li class="listheading">STACK</li>
+		<li><a class="hyperlinks1" href="stack.html#ST1">Implementation of Stack</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST2">Balance paranthesis</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST3">Trapping rain water</a></li>
+		<li class="listheading">QUEUE</li>
+		<li><a class="hyperlinks1" href="queue.html#Q1">Implementation of Queue + Deque</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q2">Sliding window maximum</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q3">Implement BFS</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q4">Implement Level Order in Binary Tree</a></li>
+		<li class="listheading">PRIORITY QUEUE</li>
+		<li><a class="hyperlinks1" href="heap.html#H1">Implementation of Heap Data structure</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H2">Connect n ropes with min cost</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H3">Median of running stream</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H4">LRU cache</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H5">LFU cache</a></li>
+		<li class="listheading">SET &amp; MAP</li>
+		<li><a class="hyperlinks1" href="set.html#M1">Internal working of HashMap</a></li>
+		<li><a class="hyperlinks1" href="set.html#M2">4-sum</a></li>
+		<li><a class="hyperlinks1" href="set.html#M3">Longest substring without repeat</a></li>
+		<li class="listheading">BINARY TREE</li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT1">Implementation:insert,delete,traverse</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT2">Invert a binary tree</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT3">Lowest common ancestor</a></li>
+		<li class="listheading">BINARY SEARCH TREE</li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST1">Implementation</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST2">Check if a tree is BST or not</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST3">AVL tree and rotation</a></li>
+		<li class="listheading">GRAPH</li>
+		<li><a class="hyperlinks1" href="graph.html#G1">Implementation, BFS and DFS traversals</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G2">Topological Sorting</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G3">Bellman ford Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G4">Dijkstra's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G5">Prim's Algorithm</a></li>
+		<li class="listheading">TRIE</li>
+		<li><a class="hyperlinks1" href="trie.html#TR1">Implementation-insert and search</a></li>
+		<li class="listheading">SEGMENT TREES</li>
+		<li><a class="hyperlinks1" href="segmenttree.html#TS1">Implementation</a></li><li class="listheading">ARRAYS</li>
+		<li><a class="hyperlinks1" href="array.html#A1">Kadane's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="array.html#A2">N/2 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A3">N/3 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A4">Merge Overlapping Intervals</a></li>
+		<li><a class="hyperlinks1" href="array.html#A5">Rotate Matrix</a></li>
+		<li><a class="hyperlinks1" href="array.html#A6"> Buy/Sell Stocks-I,II,III</a></li>
+		
+  </ul>
+</div>
+<!-- sidebar closed-->
+<!--programs of queue start here--> 
+ <div class="content1">
+  <div style="margin-left: 19%;">
+   <h3 id="BST1">Implementation</h3>
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+public class BinarySearchTree {
+	public static  Node root;
+	public BinarySearchTree(){
+		this.root = null;
+	}
+	
+	public boolean find(int id){
+		Node current = root;
+		while(current!=null){
+			if(current.data==id){
+				return true;
+			}else if(current.data>id){
+				current = current.left;
+			}else{
+				current = current.right;
+			}
+		}
+		return false;
+	}
+	public boolean delete(int id){
+		Node parent = root;
+		Node current = root;
+		boolean isLeftChild = false;
+		while(current.data!=id){
+			parent = current;
+			if(current.data>id){
+				isLeftChild = true;
+				current = current.left;
+			}else{
+				isLeftChild = false;
+				current = current.right;
+			}
+			if(current ==null){
+				return false;
+			}
+		}
+		<a>//if i am here that means we have found the node</a>
+		<a>//Case 1: if node to be deleted has no children</a>
+		if(current.left==null && current.right==null){
+			if(current==root){
+				root = null;
+			}
+			if(isLeftChild ==true){
+				parent.left = null;
+			}else{
+				parent.right = null;
+			}
+		}
+		<a>//Case 2 : if node to be deleted has only one child</a>
+		else if(current.right==null){
+			if(current==root){
+				root = current.left;
+			}else if(isLeftChild){
+				parent.left = current.left;
+			}else{
+				parent.right = current.left;
+			}
+		}
+		else if(current.left==null){
+			if(current==root){
+				root = current.right;
+			}else if(isLeftChild){
+				parent.left = current.right;
+			}else{
+				parent.right = current.right;
+			}
+		}else if(current.left!=null && current.right!=null){
+			
+			<a>//now we have found the minimum element in the right sub tree</a>
+			Node successor	 = getSuccessor(current);
+			if(current==root){
+				root = successor;
+			}else if(isLeftChild){
+				parent.left = successor;
+			}else{
+				parent.right = successor;
+			}			
+			successor.left = current.left;
+		}		
+		return true;		
+	}
+	
+	public Node getSuccessor(Node deleleNode){
+		Node successsor =null;
+		Node successsorParent =null;
+		Node current = deleleNode.right;
+		while(current!=null){
+			successsorParent = successsor;
+			successsor = current;
+			current = current.left;
+		}
+		<a>//check if successor has the right child, it cannot have left child for sure</a>
+		<a>// if it does have the right child, add it to the left of successorParent.</a>
+        <a>//successsorParent</a>
+		if(successsor!=deleleNode.right){
+			successsorParent.left = successsor.right;
+			successsor.right = deleleNode.right;
+		}
+		return successsor;
+	}
+	public void insert(int id){
+		Node newNode = new Node(id);
+		if(root==null){
+			root = newNode;
+			return;
+		}
+		Node current = root;
+		Node parent = null;
+		while(true){
+			parent = current;
+			if(id&lt;current.data){				
+				current = current.left;
+				if(current==null){
+					parent.left = newNode;
+					return;
+				}
+			}else{
+				current = current.right;
+				if(current==null){
+					parent.right = newNode;
+					return;
+				}
+			}
+		}
+	}
+	public void display(Node root){
+		if(root!=null){
+			display(root.left);
+			System.out.print(" " + root.data);
+			display(root.right);
+		}
+	}
+	public static void main(String arg[]){
+		BinarySearchTree b = new BinarySearchTree();
+		b.insert(3);b.insert(8);
+		b.insert(1);b.insert(4);b.insert(6);b.insert(2);b.insert(10);b.insert(9);
+		b.insert(20);b.insert(25);b.insert(15);b.insert(16);
+		System.out.println("Original Tree : ");
+		b.display(b.root);		
+		System.out.println("");
+		System.out.println("Check whether Node with value 4 exists : " + b.find(4));
+		System.out.println("Delete Node with no children (2) : " + b.delete(2));		
+		b.display(root);
+		System.out.println("\n Delete Node with one child (4) : " + b.delete(4));		
+		b.display(root);
+		System.out.println("\n Delete Node with Two children (10) : " + b.delete(10));		
+		b.display(root);
+	}
+}
+
+class Node{
+	int data;
+	Node left;
+	Node right;	
+	public Node(int data){
+		this.data = data;
+		left = null;
+		right = null;
+	}
+}
+</pre>
+ <h3 id="BST2">Check if a tree is BST or not</h3>
+ 	<p style="color: white; font-size: 20px;"> 
+   A better solution looks at each node only once. The trick is to write a utility helper function isBSTUtil(struct node* node, int min, int max) that traverses down the tree keeping track of the narrowing min and max allowed values as it goes, looking at each node only once. The initial values for min and max should be INT_MIN and INT_MAX — they narrow from there.</p>
+   <p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	<a>//Java implementation to check if given Binary tree </a>
+<a>//is a BST or not </a>
+
+<a>/* Class containing left and right child of current </a>
+<a>node and key value*/</a>
+class Node 
+{ 
+	int data; 
+	Node left, right; 
+
+	public Node(int item) 
+	{ 
+		data = item; 
+		left = right = null; 
+	} 
+} 
+
+public class BinaryTree 
+{ 
+	<a>//Root of the Binary Tree</a> 
+	Node root; 
+
+	<a>/* can give min and max value according to your code or </a>
+	<a>can write a function to find min and max value of tree. */</a>
+
+	<a>/* returns true if given search tree is binary</a> 
+	<a>search tree (efficient version) */</a>
+	boolean isBST() { 
+		return isBSTUtil(root, Integer.MIN_VALUE, 
+							Integer.MAX_VALUE); 
+	} 
+
+	<a>/* Returns true if the given tree is a BST and its </a>
+	<a>values are >= min and <= max. */</a>
+	boolean isBSTUtil(Node node, int min, int max) 
+	{ 
+		<a>/* an empty tree is BST */</a>
+		if (node == null) 
+			return true; 
+
+		<a>/* false if this node violates the min/max constraints */</a>
+		if (node.data < min || node.data > max) 
+			return false; 
+
+		<a>/* otherwise check the subtrees recursively</a> 
+		<a>tightening the min/max constraints */</a>
+		<a>// Allow only distinct values</a> 
+		return (isBSTUtil(node.left, min, node.data-1) && 
+				isBSTUtil(node.right, node.data+1, max)); 
+	} 
+
+	<a>/* Driver program to test above functions */</a>
+	public static void main(String args[]) 
+	{ 
+		BinaryTree tree = new BinaryTree(); 
+		tree.root = new Node(4); 
+		tree.root.left = new Node(2); 
+		tree.root.right = new Node(5); 
+		tree.root.left.left = new Node(1); 
+		tree.root.left.right = new Node(3); 
+
+		if (tree.isBST()) 
+			System.out.println("IS BST"); 
+		else
+			System.out.println("Not a BST"); 
+	} 
+} 
+</pre>
+</div>
+</div>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+        <h3>About<span>CodersCheckList</span></h3>
+
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          |
+          <a href="#bstop">Back to Top</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Interview Preparation Platform</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Campus -1, 19th KM Stone, NH 24,</span>
+            Ghaziabad, Uttar Pradesh 201009</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 123456789</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ujjwal.19b101048@abes.ac.in">ujjwal.19b101048@abes.ac.in</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:vartika.19b101085@abes.ac.in">vartika.19b101085@abes.ac.in</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Website</span>
+          An Interview Preparation Platform</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
+</body>
+</html>

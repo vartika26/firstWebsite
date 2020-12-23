@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set & Map</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+     <header>
+  <h1 id="setop" style="color: red; font-family: algerian; font-size: 250%; text-align: center;">CodersCheckList<img class="image" src="project_icon.jpg" style="float:right;width:80px;margin-right:20px;height:80px;"></h1>
+  </header>
+  <br>
+  <!-- top navigation bar container-->
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="array.html">Arrays</a>
+  <a href="string.html">Strings</a>
+  <a href="linkedlist.html">Linked-List</a>
+   <a href="stack.html">Stack</a>
+  <a href="queue.html">Queue</a>
+  <a href="heap.html">PriorityQueue</a>
+  <a href="set.html" class="active">Set And Map</a>
+  <a href="binarytree.html">Binary Tree</a>
+   <a href="binarysearchtree.html">Binary Search Tree</a>
+  <a href="graph.html">Graph</a>
+  <a href="trie.html">Trie</a>
+  <a href="segmenttree.html">Segment Tree</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!-- top navigation bar conatiner closed-->
+<!--sidebar conatiner start here--> 
+<h2>Set &amp; Map</h2>
+<div class="leftsidebar">
+  <ul class="leftlist" style="margin-right: 5px; overflow: auto;">
+    <li class="listheading">ARRAYS</li>
+		<li><a class="hyperlinks1" href="array.html#A1">Kadane's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="array.html#A2">N/2 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A3">N/3 greatest number</a></li>
+		<li><a class="hyperlinks1" href="array.html#A4">Merge Overlapping Intervals</a></li>
+		<li><a class="hyperlinks1" href="array.html#A5">Rotate Matrix</a></li>
+		<li><a class="hyperlinks1" href="array.html#A6"> Buy/Sell Stocks-I,II,III</a></li>
+		<li class="listheading">STRING</li>
+		<li><a class="hyperlinks1" href="string.html#S1">Pattern Matching Algorithms(KMP+Rabin Karp)</a></li>
+		<li><a class="hyperlinks1" href="string.html#S2">Using String Builder Class</a></li>
+		<li><a class="hyperlinks1" href="string.html#S3">String Compression Algorithm</a></li>
+		<li class="listheading">LINKEDLIST</li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L1">Implementation of LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L2">Detect cycle in a LinkedList</a></li>
+		<li><a class="hyperlinks1" href="linkedlist.html#L3">Reverse a LinkedList</a></li>
+		<li class="listheading">STACK</li>
+		<li><a class="hyperlinks1" href="stack.html#ST1">Implementation of Stack</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST2">Balance paranthesis</a></li>
+		<li><a class="hyperlinks1" href="stack.html#ST3">Trapping rain water</a></li>
+		<li class="listheading">QUEUE</li>
+		<li><a class="hyperlinks1" href="queue.html#Q1">Implementation of Queue + Deque</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q2">Sliding window maximum</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q3">Implement BFS</a></li>
+		<li><a class="hyperlinks1" href="queue.html#Q4">Implement Level Order in Binary Tree</a></li>
+		<li class="listheading">PRIORITY QUEUE</li>
+		<li><a class="hyperlinks1" href="heap.html#H1">Implementation of Heap Data structure</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H2">Connect n ropes with min cost</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H3">Median of running stream</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H4">LRU cache</a></li>
+		<li><a class="hyperlinks1" href="heap.html#H5">LFU cache</a></li>
+		<li class="listheading">SET &amp; MAP</li>
+		<li><a class="hyperlinks1" href="set.html#M1">Internal working of HashMap</a></li>
+		<li><a class="hyperlinks1" href="set.html#M2">4-sum</a></li>
+		<li><a class="hyperlinks1" href="set.html#M3">Longest substring without repeat</a></li>
+		<li class="listheading">BINARY TREE</li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT1">Implementation:insert,delete,traverse</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT2">Invert a binary tree</a></li>
+		<li><a class="hyperlinks1" href="binarytree.html#BT3">Lowest common ancestor</a></li>
+		<li class="listheading">BINARY SEARCH TREE</li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST1">Implementation</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST2">Check if a tree is BST or not</a></li>
+		<li><a class="hyperlinks1" href="binarysearchtree.html#BST3">AVL tree and rotation</a></li>
+		<li class="listheading">GRAPH</li>
+		<li><a class="hyperlinks1" href="graph.html#G1">Implementation, BFS and DFS traversals</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G2">Topological Sorting</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G3">Bellman ford Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G4">Dijkstra's Algorithm</a></li>
+		<li><a class="hyperlinks1" href="graph.html#G5">Prim's Algorithm</a></li>
+		<li class="listheading">TRIE</li>
+		<li><a class="hyperlinks1" href="trie.html#TR1">Implementation-insert and search</a></li>
+		<li class="listheading">SEGMENT TREES</li>
+		<li><a class="hyperlinks1" href="segmenttree.html#TS1">Implementation</a></li>
+  </ul>
+</div>
+<!-- sidebar closed-->
+<!--programs of queue start here--> 
+ <div class="content1">
+  <div style="margin-left: 19%;">
+   <h3 id="M1">Internal working of HashMap</h3>
+   <p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+      <p style="color: white; font-size: 20px;"> 
+       The function ‘hashCode’ is used to get the hash code of an object in Java. This is an object of super class Object. It returns the object reference’s memory as an integer. It is a native function, which means no direct method in Java can be used to fetch the reference of the object.<br><br>
+
+For better performace of HashMap, use the hashCode() properly. Basically, this function is used to calculate the bucket and index values. It is defined in the following way −<br></p>
+<pre class="content2">public native hashCode()</pre>
+      <p style="color: white; font-size: 20px;"> 
+Since we have mentioned ‘bucket’, it is important to understand what it means. It is an element that is used to store nodes. There can be more than two nodes in a single bucket. The nodes can be connected using linked list data structure. The capacity of the hashmap can be calculated using the bucket and load factor.<br></p>
+<pre class="content2">Capacity = number of buckets * load factor</pre>
+      <p style="color: white; font-size: 20px;"> 
+The function ‘equals’ is used to check the equality between two objects. It is also given by super class Object. This function can be overridden in the customized class by providing customized implementation. This function returns true or false depending on whether the two objects in questions are equal or not.<br>
+
+An index value is generated so that the size of array is not big, thereby avoiding outOfMemoryException. The formula to find the index of the array is −<br></p>
+<pre class="content2">Index = hashCode(key) & (n-1) – Here n refers to number of buckets.</pre>
+     <p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	import java.util.HashMap;
+class hash_map{
+   String key;
+   hash_map(String key){
+      this.key = key;
+   }
+   @Override
+   public int hashCode(){
+      int hash = (int)key.charAt(0);
+      System.out.println("The hash code for key : " + key + " = " + hash);
+      return hash;
+   }
+   @Override
+   public boolean equals(Object obj){
+      return key.equals(((hash_map)obj).key);
+   }
+}
+public class Demo{
+   public static void main(String[] args){
+      HashMap my_map = new HashMap();
+      my_map.put(new hash_map("This"), 15);
+      my_map.put(new hash_map("is"), 35);
+      my_map.put(new hash_map("a"), 26);
+      my_map.put(new hash_map("sample"), 45);
+      System.out.println("The value for key 'this' is : " + my_map.get(new hash_map("This")));
+      System.out.println("The value for key 'is' is: " + my_map.get(new hash_map("is")));
+      System.out.println("The value for key 'a' is: " + my_map.get(new hash_map("a")));
+      System.out.println("The value for key 'sample' is: " + my_map.get(new hash_map("sample")));
+   }
+</pre>
+   <h3 id="M2">4-Sum</h3>
+      <p style="color: white; font-size: 20px;"> 
+      	Given an array nums of n integers and an integer target, are there elements a, b, c, and d in nums such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.</p>
+      	<pre class="content2">
+Input: nums = [1,0,-1,0,-2,2], target = 0
+Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+      	</pre>
+      	<pre class="content2">
+Input: nums = [], target = 0
+Output: []
+      	</pre>
+   <p style="font-size: 26px; color: gold;">EXPLANATION:</p>
+      <p style="color: white; font-size: 20px;"> 
+      	Since elements must sum up to the exact target value, we can also use the Two Sum: One-pass Hash Table approach.
+      	<br>
+
+In 3Sum: Hash Set, we solved the problem without sorting the array. To do that, we needed to sort values within triplets, and track them in a hash set. Doing the same for k values could be impractical.<br>
+
+So, for this approach, we will also sort the array and skip duplicates the same way as in the Two Pointers approach above. Thus, the code will only differ in the twoSum implementation.<br>
+     </p>
+ 	<p style="font-size: 26px; color: gold;">ALGORITHM:</p>
+      <p style="color: white; font-size: 20px;"> 
+      	twoSum implementation here is almost the same as in Two Sum: One-pass Hash Table. The only difference is the check to avoid duplicates. Since the array is sorted, we can just compare the found pair with the last one in the result res.
+    </p>
+     <p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	public List&lt;List&lt;Integer&gt;&gt; fourSum(int[] nums, int target) {
+    Arrays.sort(nums);
+    return kSum(nums, target, 0, 4);
+}
+public List &lt;List&lt;Integer&gt;&gt; kSum(int[] nums, int target, int start, int k) {
+    List&lt;List&lt;Integer&gt;&gt; res = new ArrayList&lt;&gt;();
+    if (start == nums.length || nums[start] * k > target || target > nums[nums.length - 1] * k)
+        return res;
+    if (k == 2)
+        return twoSum(nums, target, start);
+    for (int i = start; i < nums.length; ++i)
+        if (i == start || nums[i - 1] != nums[i])
+            for (var set : kSum(nums, target - nums[i], i + 1, k - 1)) {
+                res.add(new ArrayList&lt;&gt;(Arrays.asList(nums[i])));
+                res.get(res.size() - 1).addAll(set);
+            }
+    return res;
+}
+public List&lt;List&lt;Integer&gt;&gt; twoSum(int[] nums, int target, int start) {
+    List&lt;List&lt;Integer&gt;&gt; res = new ArrayList&lt;&gt;();
+    Set&lt;Integer&gt; s = new HashSet&lt;&gt;();
+    for (int i = start; i < nums.length; ++i) {
+        if (res.isEmpty() || res.get(res.size() - 1).get(1) != nums[i])
+            if (s.contains(target - nums[i]))
+                res.add(Arrays.asList(target - nums[i], nums[i]));
+        s.add(nums[i]);
+    }
+    return res;
+}
+</pre>
+<h3 id="M3">Longest substring without repeat</h3>
+      <p style="color: white; font-size: 20px;"> 
+        Write a java program or function to find the longest substring without repeating characters in a given string. For example, if “javaconceptoftheday” is the input string, then the longest substring without repeating or duplicate characters is “oftheday” and its length is 8.
+      </p>
+ 	<p style="font-size: 26px; color: gold;">ALGORITHM:</p>
+ 	<p style="color: white; font-size: 20px;"> 
+ 	<strong>Step 1 :</strong> Convert the given inputString to an array of characters called charArray.<br>
+
+char[] charArray = inputString.toCharArray();<br><br>
+
+<strong>Step 2 :</strong> Initialize longestSubstring to null and longestSubstringLength to 0.<br>
+
+String longestSubstring = null;<br>
+
+int longestSubstringLength = 0;<br><br>
+
+<strong>Step 3 :</strong> Define one LinkedHashMap called charPosMap. It will hold characters of inputString as keys and their position as values. Here, we have used LinkedHashMap instead of HashMap because it maintains the insertion order of elements.<br>
+
+LinkedHashMap&lt;Character, Integer&gt; charPosMap = new LinkedHashMap&lt;Character, Integer&gt;();<br><br>
+
+<strong>Step 4 :</strong> For every char ch in charArray, check whether it is already present in charPosMap. If it is not present, add this char to charPosMap along with its position.<br>
+
+if(!charPosMap.containsKey(ch))<br>
+{<br>
+        charPosMap.put(ch, i);<br>
+}<br><br>
+
+<strong>Step 5 :</strong> If char ch is present in charPosMap, reposition the cursor i to the position of ch and clear the charPosMap. <br>
+
+i = charPosMap.get(ch);<br>
+
+charPosMap.clear();<br><br>
+
+
+ 
+<strong>Step 6 :</strong> Check whether the size of charPosMap is greater than longestSubstringLength. If it is greater than longestSubstringLength, assign the size of charPosMap to longestSubstringLength and its keySet to longestSubstring.
+<br>
+
+if(charPosMap.size() > longestSubstringLength)<br>
+{<br>
+        longestSubstringLength = charPosMap.size();<br>
+
+        longestSubstring = charPosMap.keySet().toString();<br>
+}<br><br>
+
+<strong>Step 7 :</strong> Print longestSubstring and longestSubstringLength.</p>
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+	import java.util.LinkedHashMap;
+ 
+public class MainClass 
+{  
+    static void longestSubstring(String inputString)
+    {
+        <a>//Convert inputString to charArray</a>
+         
+        char[] charArray = inputString.toCharArray();
+         
+        <a>//Initialization</a>
+         
+        String longestSubstring = null;
+         
+        int longestSubstringLength = 0;
+         
+        <a>//Creating LinkedHashMap with characters as keys and their position as values.</a>
+         
+        LinkedHashMap<Character, Integer> charPosMap = new LinkedHashMap<Character, Integer>();
+         
+        <a>//Iterating through charArray</a>
+         
+        for (int i = 0; i < charArray.length; i++) 
+        {
+            char ch = charArray[i];
+         
+            <a>//If ch is not present in charPosMap, adding ch into charPosMap along with its position</a>
+             
+            if(!charPosMap.containsKey(ch))
+            {
+                charPosMap.put(ch, i);
+            }
+             
+            <a>//If ch is already present in charPosMap, reposioning the cursor i to the position of ch and clearing the charPosMap</a>
+             
+            else
+            {   
+                i = charPosMap.get(ch);
+                 
+                charPosMap.clear();
+            }
+             
+            <a>//Updating longestSubstring and longestSubstringLength</a>
+             
+            if(charPosMap.size() > longestSubstringLength)
+            {
+                longestSubstringLength = charPosMap.size();
+                 
+                longestSubstring = charPosMap.keySet().toString();
+            }
+        }
+         
+        System.out.println("Input String : "+inputString);
+         
+        System.out.println("The longest substring : "+longestSubstring);
+         
+        System.out.println("The longest Substring Length : "+longestSubstringLength);
+    }
+     
+    public static void main(String[] args) 
+    {   
+        longestSubstring("javaconceptoftheday");
+         
+        System.out.println("==========================");
+         
+        longestSubstring("thelongestsubstring");
+    }   
+}
+</pre>
+   </div>
+ </div>
+ <footer class="footer-distributed">
+
+      <div class="footer-left">
+        <h3>About<span>CodersCheckList</span></h3>
+
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          |
+          <a href="#setop">Back to Top</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Interview Preparation Platform</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Campus -1, 19th KM Stone, NH 24,</span>
+            Ghaziabad, Uttar Pradesh 201009</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 123456789</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ujjwal.19b101048@abes.ac.in">ujjwal.19b101048@abes.ac.in</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:vartika.19b101085@abes.ac.in">vartika.19b101085@abes.ac.in</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Website</span>
+          An Interview Preparation Platform</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

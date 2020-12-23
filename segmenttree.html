@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Segment Tree</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+     <header>
+	<h1 id="tstop" style="color: red; font-family: algerian; font-size: 250%; text-align: center;">CodersCheckList<img class="image" src="project_icon.jpg" style="float:right;width:80px;margin-right:20px;height:80px;"></h1>
+	</header>
+	<br>
+	<!-- top navigation bar container-->
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="array.html">Arrays</a>
+  <a href="string.html">Strings</a>
+  <a href="linkedlist.html">Linked-List</a>
+   <a href="stack.html">Stack</a>
+  <a href="queue.html">Queue</a>
+  <a href="heap.html">PriorityQueue</a>
+  <a href="set.html">Set And Map</a>
+  <a href="binarytree.html">Binary Tree</a>
+   <a href="binarysearchtree.html">Binary Search Tree</a>
+  <a href="graph.html">Graph</a>
+  <a href="trie.html">Trie</a>
+  <a href="segmenttree.html" class="active">Segment Tree</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!-- top navigation bar conatiner closed-->
+<!--sidebar conatiner start here--> 
+<h2>Segment Tree</h2>
+<div class="leftsidebar">
+	<ul class="leftlist" style="margin-right: 5px; overflow: auto;">
+		<li class="listheading">ARRAYS</li>
+    <li><a class="hyperlinks1" href="array.html#A1">Kadane's Algorithm</a></li>
+    <li><a class="hyperlinks1" href="array.html#A2">N/2 greatest number</a></li>
+    <li><a class="hyperlinks1" href="array.html#A3">N/3 greatest number</a></li>
+    <li><a class="hyperlinks1" href="array.html#A4">Merge Overlapping Intervals</a></li>
+    <li><a class="hyperlinks1" href="array.html#A5">Rotate Matrix</a></li>
+    <li><a class="hyperlinks1" href="array.html#A6"> Buy/Sell Stocks-I,II,III</a></li>
+    <li class="listheading">STRING</li>
+    <li><a class="hyperlinks1" href="string.html#S1">Pattern Matching Algorithms(KMP+Rabin Karp)</a></li>
+    <li><a class="hyperlinks1" href="string.html#S2">Using String Builder Class</a></li>
+    <li><a class="hyperlinks1" href="string.html#S3">String Compression Algorithm</a></li>
+    <li class="listheading">LINKEDLIST</li>
+    <li><a class="hyperlinks1" href="linkedlist#L1">Implementation of LinkedList</a></li>
+    <li><a class="hyperlinks1" href="linkedlist#L2">Detect cycle in a LinkedList</a></li>
+    <li><a class="hyperlinks1" href="linkedlist#L3">Reverse a LinkedList</a></li>
+    <li class="listheading">STACK</li>
+    <li><a class="hyperlinks1" href="stack.html#ST1">Implementation of Stack</a></li>
+    <li><a class="hyperlinks1" href="stack.html#ST2">Balance paranthesis</a></li>
+    <li><a class="hyperlinks1" href="stack.html#ST3">Trapping rain water</a></li>
+    <li class="listheading">QUEUE</li>
+    <li><a class="hyperlinks1" href="queue.html#Q1">Implementation of Queue + Deque</a></li>
+    <li><a class="hyperlinks1" href="queue.html#Q2">Sliding window maximum</a></li>
+    <li><a class="hyperlinks1" href="queue.html#Q3">Implement BFS</a></li>
+    <li><a class="hyperlinks1" href="queue.html#Q4">Implement Level Order in Binary Tree</a></li>
+    <li class="listheading">PRIORITY QUEUE</li>
+    <li><a class="hyperlinks1" href="heap.html#H1">Implementation of Heap Data structure</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H2">Connect n ropes with min cost</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H3">Median of running stream</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H4">LRU cache</a></li>
+    <li><a class="hyperlinks1" href="heap.html#H5">LFU cache</a></li>
+    <li class="listheading">SET &amp; MAP</li>
+    <li><a class="hyperlinks1" href="set.html#M1">Internal working of HashMap</a></li>
+    <li><a class="hyperlinks1" href="set.html#M2">4-sum</a></li>
+    <li><a class="hyperlinks1" href="set.html#M3">Longest substring without repeat</a></li>
+    <li class="listheading">BINARY TREE</li>
+    <li><a class="hyperlinks1" href="binarytree.html#BT1">Implementation:insert,delete,traverse</a></li>
+    <li><a class="hyperlinks1" href="binarytree.html#BT2">Invert a binary tree</a></li>
+    <li><a class="hyperlinks1" href="binarytree.html#BT3">Lowest common ancestor</a></li>
+    <li class="listheading">BINARY SEARCH TREE</li>
+    <li><a class="hyperlinks1" href="binarysearchtree.html#BST1">Implementation</a></li>
+    <li><a class="hyperlinks1" href="binarysearchtree.html#BST2">Check if a tree is BST or not</a></li>
+    <li><a class="hyperlinks1" href="binarysearchtree.html#BST3">AVL tree and rotation</a></li>
+    <li class="listheading">GRAPH</li>
+    <li><a class="hyperlinks1" href="graph.html#G1">Implementation, BFS and DFS traversals</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G2">Topological Sorting</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G3">Bellman ford Algorithm</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G4">Dijkstra's Algorithm</a></li>
+    <li><a class="hyperlinks1" href="graph.html#G5">Prim's Algorithm</a></li>
+    <li class="listheading">TRIE</li>
+    <li><a class="hyperlinks1" href="trie.html#TR1">Implementation-insert and search</a></li>
+    <li class="listheading">SEGMENT TREES</li>
+    <li><a class="hyperlinks1" href="segmenttree.html#TS1">Implementation</a></li>
+    </ul>
+</div>
+<!-- sidebar closed-->
+<!--programs of arrays start here--> 
+ <div class="content1">
+ 	<div style="margin-left: 19%;">
+ 	<h3 id="TS1">Segment Trees</h3>
+ 	<p style="color: white; font-size: 20px;">Segment Tree is used in cases where there are multiple range queries on array and modifications of elements of the same array. For example, finding the sum of all the elements in an array from indices L to R, or finding the minimum (famously known as Range Minumum Query problem) of all the elements in an array from indices L to R. These problems can be easily solved with one of the most versatile data structures, Segment Tree.</p>
+ 	<img src="segmenttree.jpg" width="40%" height="500px" style="border:3px solid red;">
+  <img src="segmenttree1.jpg" width="40%" height="500px" style="border:3px solid red;">
+<p style="font-size: 26px; color: gold;">JAVA CODE:</p>
+ 	
+<pre style="color: white;font-size:16px; text-align: center;border:3px solid red; padding: 10px;overflow: auto;">
+void build(int node, int start, int end)
+{
+    if(start == end)
+    {
+        // Leaf node will have a single element
+        tree[node] = A[start];
+    }
+    else
+    {
+        int mid = (start + end) / 2;
+        // Recurse on the left child
+        build(2*node, start, mid);
+        // Recurse on the right child
+        build(2*node+1, mid+1, end);
+        // Internal node will have the sum of both of its children
+        tree[node] = tree[2*node] + tree[2*node+1];
+    }
+}
+void update(int node, int start, int end, int idx, int val)
+{
+    if(start == end)
+    {
+        // Leaf node
+        A[idx] += val;
+        tree[node] += val;
+    }
+    else
+    {
+        int mid = (start + end) / 2;
+        if(start <= idx and idx <= mid)
+        {
+            // If idx is in the left child, recurse on the left child
+            update(2*node, start, mid, idx, val);
+        }
+        else
+        {
+            // if idx is in the right child, recurse on the right child
+            update(2*node+1, mid+1, end, idx, val);
+        }
+        // Internal node will have the sum of both of its children
+        tree[node] = tree[2*node] + tree[2*node+1];
+    }
+}
+int query(int node, int start, int end, int l, int r)
+{
+    if(r < start or end < l)
+    {
+        // range represented by a node is completely outside the given range
+        return 0;
+    }
+    if(l <= start and end <= r)
+    {
+        // range represented by a node is completely inside the given range
+        return tree[node];
+    }
+    // range represented by a node is partially inside and partially outside the given range
+    int mid = (start + end) / 2;
+    int p1 = query(2*node, start, mid, l, r);
+    int p2 = query(2*node+1, mid+1, end, l, r);
+    return (p1 + p2);
+}       
+    </pre>
+ 	       <br>
+</div>
+ </div>
+ 
+ <footer class="footer-distributed" style="margin-top: 40%;">
+
+      <div class="footer-left">
+        <h3>About<span>CodersCheckList</span></h3>
+
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          |
+          <a href="#tstop">Back to Top</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Interview Preparation Platform</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Campus -1, 19th KM Stone, NH 24,</span>
+            Ghaziabad, Uttar Pradesh 201009</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 123456789</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ujjwal.19b101048@abes.ac.in">ujjwal.19b101048@abes.ac.in</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:vartika.19b101085@abes.ac.in">vartika.19b101085@abes.ac.in</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Website</span>
+          An Interview Preparation Platform</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  
+
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+
+</html>
